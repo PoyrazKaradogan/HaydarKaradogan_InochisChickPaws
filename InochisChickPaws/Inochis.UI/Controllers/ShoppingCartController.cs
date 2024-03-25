@@ -21,7 +21,6 @@ namespace Inochis.UI.Controllers
             _shoppingCartItemManager = shoppingCartItemManager;
         }
 
-        //Kullanıcının sepetini gösterecek
         public async Task<IActionResult> Index()
         {
             var userId = _userManager.GetUserId(User);

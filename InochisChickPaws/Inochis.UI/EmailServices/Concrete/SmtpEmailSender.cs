@@ -4,12 +4,6 @@ using System.Net.Mail;
 
 namespace Inochis.UI.EmailServices.Concrete
 {
-     /* host: mail server adresi
-     * port: serverdaki port numarası
-     * enableSsl: ssl sertifikasına sahip olunup olunmadığı
-     * username ve password
-     * Bu bilgileri appsettings.json dosyasında tutup, dependency injection yöntemiyle buraya alıyoruz.
-     */
     public class SmtpEmailSender : IEmailSender
     {
         private readonly string _host;
