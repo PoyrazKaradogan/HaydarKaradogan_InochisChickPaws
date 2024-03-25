@@ -1,0 +1,14 @@
+﻿@model int
+<li>
+    <a asp-area=""
+       asp-controller="ShoppingCart"
+       asp-action="Index">
+        <i class="icon_bag_alt">
+            </i>
+        @if (Model != 0)
+        {
+            <div class="tip">@Model</div>
+        }
+
+    </a>
+</li>

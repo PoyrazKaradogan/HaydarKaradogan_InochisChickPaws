@@ -1,0 +1,12 @@
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\bin\Debug\net7.0\MiniShop.Shared.deps.json
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\bin\Debug\net7.0\MiniShop.Shared.dll
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\bin\Debug\net7.0\MiniShop.Shared.pdb
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\obj\Debug\net7.0\MiniShop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\obj\Debug\net7.0\MiniShop.Shared.AssemblyInfoInputs.cache
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\obj\Debug\net7.0\MiniShop.Shared.AssemblyInfo.cs
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\obj\Debug\net7.0\MiniShop.Shared.csproj.CoreCompileInputs.cache
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\obj\Debug\net7.0\MiniShop.Shared.sourcelink.json
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\obj\Debug\net7.0\MiniShop.Shared.dll
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\obj\Debug\net7.0\refint\MiniShop.Shared.dll
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\obj\Debug\net7.0\MiniShop.Shared.pdb
+C:\Belgeler\FS-2310-23-benim--\Section-11-Identity\Week-21\05-03-2024\MiniShop\MiniShop.Shared\obj\Debug\net7.0\ref\MiniShop.Shared.dll

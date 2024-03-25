@@ -1,0 +1,36 @@
+﻿@model List<CategoryViewModel>
+<!-- Categories Section Begin -->
+<section class="categories">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div class="categories__item categories__large__item set-bg"
+                     data-setbg="/ui/img/categories/category-1.png">
+                    <div class="categories__text">
+                        <h4 class="text-bold">@Model[0].Name</h4>
+                    
+                        <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-id="@Model[0].Id" >Alışveriş Yap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="row">
+                    @for (var i = 1; i < Model.Count; i++)
+                    {
+                        <div class="col-lg-4  col-sm-12 p-0">
+                            <div class="categories__item set-bg" data-setbg=@($"/ui/img/categories/category-{i + 1}.png")>
+                                <div class="categories__text">
+                                    <h4>@Model[i].Name</h4>
+                         
+                                    <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-id="@Model[i].Id">Alışveriş Yap</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Categories Section End -->

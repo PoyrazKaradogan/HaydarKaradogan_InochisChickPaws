@@ -1,0 +1,97 @@
+﻿@model List<ProductViewModel>
+@await Component.InvokeAsync("Categories")
+
+<!-- Product Section Begin -->
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="section-title">
+                    <h4>Ürünler</h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="row property__gallery">
+            @foreach (var p in Model)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6 mix">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="/images/products/@p.ImageUrl">
+                            <div class="label new">New</div>
+                            <ul class="product__hover">
+                                <li><a href="/images/products/@p.ImageUrl" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li>
+                                        <form asp-area=""
+                                              asp-controller="ShoppingCart"
+                                              asp-action="AddToCart">
+                                            <input type="hidden" name="productId" value="@p.Id" />
+                                            <input type="hidden" name="quantity" value="1" />
+
+                                            <button type="submit" style="background-color:transparent; border:none"><a><span class="icon_bag_alt"></span></a></button>
+                                        </form>
+                                    </li>
+                                }
+
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">@p.Name</a></h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">@($"{p.Price:C0}")</div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- Product Section End -->
+
+<!-- Banner Section Begin -->
+<section class="banner set-bg" data-setbg="/ui/img/banner/banner-1.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-8 m-1">
+                <div class="banner__slider owl-carousel m-auto">
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>Sevdikleriniz için</span>
+                            <h1>Favori Ürünlerimiz</h1>
+                            <a href="#">Alışveriş yap</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>Sevdikleriniz için</span>
+                            <h1>Favori Ürünlerimiz</h1>
+                            <a href="#">Alışveriş yap</a>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__text">
+                            <span>Sevdikleriniz için</span>
+                            <h1>Favori Ürünlerimiz</h1>
+                            <a href="#">Alışveriş yap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner Section End -->
+
+
+
+
+

@@ -1,0 +1,78 @@
+﻿    <!-- Header Section Begin -->
+<header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3">
+                <div class="header__logo">
+              
+                            <a href="./index.html"><img src="/ui/img/logos.png" alt=""></a>
+   
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-9  align-self-lg-center justify-content-center ">
+                <nav class="header__menu">
+                    <ul>
+                        <li class="active">
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                        </li>
+                     
+                        <li>
+                            <a  href="#">Kategoriler</a>
+                            <ul class="dropdown">
+                                <li><a href="./">Kolyelerimiz</a></li>
+                                <li><a href="./">Bileklik-Charm</a></li>
+                                <li><a href="./">Küpelerimiz</a></li>
+                                <li><a href="./">Setlerimiz</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contact.html">İletişim</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3">
+                <div class="header__right">
+                    <div class="header__right__auth">
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <a asp-area=""
+                               asp-controller="Account"
+                               asp-action="Login">Giriş Yap</a>
+                            <a asp-area=""
+                               asp-controller="Account"
+                            asp-action="Register">Kayıt Ol</a>
+                        }else{
+                            if(User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
+                            {
+                                <a asp-area="Admin"
+                                   asp-controller="Home"
+                                   asp-action="Index">Admin Panel</a>
+                            }
+                            <a asp-area=""
+                               asp-controller="Account"
+                               asp-action="Profile">@User.Identity.Name</a>
+                            <a asp-area=""
+                               asp-controller="Account"
+                               asp-action="Logout">Çıkış</a>
+                        }
+
+                    </div>
+                    <ul class="header__right__widget">
+                      
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                      
+                            @await Component.InvokeAsync("ShoppingCartNotification", User.Identity.Name ?? null);
+                        }
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="canvas__open">
+            <i class="fa fa-bars "></i>
+        </div>
+    </div>
+</header>
+<!-- Header Section End -->
