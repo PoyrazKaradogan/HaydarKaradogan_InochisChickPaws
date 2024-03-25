@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X5w+h3pXSKncjTXaFjOxOKvWsEeFsQ7ObFMjGaD7W/irDJIUE1pTTndgMkP9ZCtTYpTKmdB6LNkKAMa3Y0qf4Q==",
+  "dgSpecHash": "k7jpkW9cC4u76jwxlpIerBWI0Thx/qzcQa/M+PMUnCZqPhJU0+6j6eSiI4KfxLFK0X9Epak4liBPhCfgIUkPKA==",
   "success": true,
-  "projectFilePath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Entity\\Inochis.Entity.csproj",
+  "projectFilePath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Entity\\Inochis.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hfk19\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.15\\microsoft.aspnetcore.cryptography.internal.7.0.15.nupkg.sha512",
     "C:\\Users\\hfk19\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.15\\microsoft.aspnetcore.cryptography.keyderivation.7.0.15.nupkg.sha512",

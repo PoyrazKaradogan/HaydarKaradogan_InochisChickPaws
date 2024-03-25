@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.UI\\Inochis.UI.csproj": {}
+    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\Inochis.UI.csproj": {}
   },
   "projects": {
-    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Business\\Inochis.Business.csproj": {
+    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Business\\Inochis.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Business\\Inochis.Business.csproj",
+        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Business\\Inochis.Business.csproj",
         "projectName": "Inochis.Business",
-        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Business\\Inochis.Business.csproj",
+        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Business\\Inochis.Business.csproj",
         "packagesPath": "C:\\Users\\hfk19\\.nuget\\packages\\",
-        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Business\\obj\\",
+        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Data\\Inochis.Data.csproj": {
-                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Data\\Inochis.Data.csproj"
+              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Data\\Inochis.Data.csproj": {
+                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Data\\Inochis.Data.csproj"
               },
-              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
-                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj"
+              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
+                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Data\\Inochis.Data.csproj": {
+    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Data\\Inochis.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Data\\Inochis.Data.csproj",
+        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Data\\Inochis.Data.csproj",
         "projectName": "Inochis.Data",
-        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Data\\Inochis.Data.csproj",
+        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Data\\Inochis.Data.csproj",
         "packagesPath": "C:\\Users\\hfk19\\.nuget\\packages\\",
-        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Data\\obj\\",
+        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -106,11 +106,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Entity\\Inochis.Entity.csproj": {
-                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Entity\\Inochis.Entity.csproj"
+              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Entity\\Inochis.Entity.csproj": {
+                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Entity\\Inochis.Entity.csproj"
               },
-              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
-                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj"
+              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
+                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj"
               }
             }
           }
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Entity\\Inochis.Entity.csproj": {
+    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Entity\\Inochis.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Entity\\Inochis.Entity.csproj",
+        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Entity\\Inochis.Entity.csproj",
         "projectName": "Inochis.Entity",
-        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Entity\\Inochis.Entity.csproj",
+        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Entity\\Inochis.Entity.csproj",
         "packagesPath": "C:\\Users\\hfk19\\.nuget\\packages\\",
-        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Entity\\obj\\",
+        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -185,8 +185,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
-                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj"
+              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
+                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj"
               }
             }
           }
@@ -226,14 +226,14 @@
         }
       }
     },
-    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
+    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj",
+        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj",
         "projectName": "Inochis.Shared",
-        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj",
+        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj",
         "packagesPath": "C:\\Users\\hfk19\\.nuget\\packages\\",
-        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\obj\\",
+        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -289,14 +289,14 @@
         }
       }
     },
-    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.UI\\Inochis.UI.csproj": {
+    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\Inochis.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.UI\\Inochis.UI.csproj",
+        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\Inochis.UI.csproj",
         "projectName": "Inochis.UI",
-        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.UI\\Inochis.UI.csproj",
+        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\Inochis.UI.csproj",
         "packagesPath": "C:\\Users\\hfk19\\.nuget\\packages\\",
-        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.UI\\obj\\",
+        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -318,11 +318,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Business\\Inochis.Business.csproj": {
-                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Business\\Inochis.Business.csproj"
+              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Business\\Inochis.Business.csproj": {
+                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Business\\Inochis.Business.csproj"
               },
-              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
-                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj"
+              "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
+                "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj"
               }
             }
           }

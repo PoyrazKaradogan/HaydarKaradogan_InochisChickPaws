@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {}
+    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
+    "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj",
+        "projectUniqueName": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj",
         "projectName": "Inochis.Shared",
-        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\Inochis.Shared.csproj",
+        "projectPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\Inochis.Shared.csproj",
         "packagesPath": "C:\\Users\\hfk19\\.nuget\\packages\\",
-        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.Shared\\obj\\",
+        "outputPath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

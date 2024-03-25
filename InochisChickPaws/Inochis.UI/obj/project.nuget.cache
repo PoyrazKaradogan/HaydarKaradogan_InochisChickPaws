@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GozBEBcyi/DDKYMPrLnbGN6pa6NuQJhD88d6h/tZi9AjDdl+KcI5SQmDrydfl0nJNJc8m0WETnj73X06IlDiSQ==",
+  "dgSpecHash": "YqpNZ3auMCWBT78hYyCQsQEMmZIbr1PcGIO7xKPCMydGzNR7r7hZkIUPlscEYVqAHq5Z/5OlPmm6zhZvM4QIDA==",
   "success": true,
-  "projectFilePath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochİsChickPaws\\Inochis.UI\\Inochis.UI.csproj",
+  "projectFilePath": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\Inochis.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hfk19\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\hfk19\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
