@@ -27,6 +27,7 @@ namespace Inochis.Data.Concrete.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryConfig).Assembly);
             base.OnModelCreating(modelBuilder);
         }
     }
