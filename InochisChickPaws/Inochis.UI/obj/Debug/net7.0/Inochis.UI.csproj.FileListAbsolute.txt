@@ -85,3 +85,4 @@ C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Deb
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Debug\net7.0\Inochis.UI.pdb
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Debug\net7.0\Inochis.UI.genruntimeconfig.cache
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Debug\net7.0\ref\Inochis.UI.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Debug\net7.0\Inochis.UI.sourcelink.json

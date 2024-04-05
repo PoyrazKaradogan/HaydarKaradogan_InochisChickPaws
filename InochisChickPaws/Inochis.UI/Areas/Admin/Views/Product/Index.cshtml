@@ -1,8 +1,8 @@
 ﻿@model List<ProductViewModel>
  <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content-wrapper bg-dark">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <section class="content-header ">
         <div class="container-fluid">
             <div class="d-flex justify-content-between mb-2">
                 <div>
@@ -13,7 +13,7 @@
                        asp-controller="Product"
                        asp-action="Index"
                        asp-route-id="@(!ViewBag.ShowDeleted)"
-                    class="btn btn-sm @(ViewBag.ShowDeleted ? "btn-info" : "btn-danger")">@(ViewBag.ShowDeleted ? "Ürün Listesine Geri Dön" : "Çöp Kutusu" )</a>
+                    class="btn btn-sm @(ViewBag.ShowDeleted ? "btn-light" : "btn-danger")">@(ViewBag.ShowDeleted ? "Geri Dön" : "Çöp Kutusu" )</a>
 
                     <a asp-area="Admin"
                        asp-controller="Product"
@@ -31,7 +31,7 @@
                 <div class="col-12">
                     <div class="card">
                         <!-- /.card-header -->
-                        <div class="card-body">
+                        <div class="card-body bg-dark">
                             <table id="myDataTable" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
@@ -63,7 +63,7 @@
                                                    asp-controller="Product"
                                                    asp-action="Edit"
                                                    asp-route-id="@p.Id"
-                                                   class="btn btn-link">@p.Name</a>
+                                                   class="btn btn-outline-light">@p.Name</a>
                                                 }
                                    
                                             </td>
@@ -97,7 +97,7 @@
                                                        asp-controller="Product"
                                                        asp-action="Edit"
                                                        asp-route-id="@p.Id"
-                                                       class="btn btn-warning btn-sm">
+                                                       class="btn btn-light btn-sm">
                                                        <i class="far fa-edit"></i></a>
                                                     <a asp-area="Admin"
                                                        asp-controller="Product"
@@ -110,7 +110,7 @@
                                                        asp-controller="Product"
                                                        asp-action="SoftDelete"
                                                        asp-route-id="@p.Id"
-                                                       class="btn btn-success btn-sm">
+                                                       class="btn btn-primary btn-sm">
                                                         <i class="fas fa-undo-alt"></i>
                                                     </a>
                                                     <a asp-area="Admin"

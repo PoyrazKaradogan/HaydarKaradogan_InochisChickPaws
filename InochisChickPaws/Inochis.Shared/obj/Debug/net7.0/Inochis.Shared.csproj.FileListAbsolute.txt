@@ -9,3 +9,4 @@ C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Shared\obj
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Shared\obj\Debug\net7.0\refint\Inochis.Shared.dll
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Shared\obj\Debug\net7.0\Inochis.Shared.pdb
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Shared\obj\Debug\net7.0\ref\Inochis.Shared.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Shared\obj\Debug\net7.0\Inochis.Shared.sourcelink.json

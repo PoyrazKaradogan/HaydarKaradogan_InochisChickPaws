@@ -17,3 +17,4 @@ C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Business\o
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Business\obj\Debug\net7.0\refint\Inochis.Business.dll
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Business\obj\Debug\net7.0\Inochis.Business.pdb
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Business\obj\Debug\net7.0\ref\Inochis.Business.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Business\obj\Debug\net7.0\Inochis.Business.sourcelink.json

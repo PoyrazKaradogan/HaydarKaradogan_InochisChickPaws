@@ -13,3 +13,4 @@ C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Entity\obj
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Entity\obj\Debug\net7.0\refint\Inochis.Entity.dll
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Entity\obj\Debug\net7.0\Inochis.Entity.pdb
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Entity\obj\Debug\net7.0\ref\Inochis.Entity.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Entity\obj\Debug\net7.0\Inochis.Entity.sourcelink.json

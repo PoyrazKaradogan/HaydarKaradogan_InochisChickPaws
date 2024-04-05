@@ -3,7 +3,7 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <div class="container-fluid">
+        <div class="container-fluid bg-dark">
             <div class="d-flex justify-content-between mb-2">
                 <div>
                     <h1>Yeni Ürün</h1>
@@ -24,7 +24,7 @@
                         enctype="multipart/form-data"
                     >
                     <!--Ürün Bilgileri-->
-                    <div class="card card-success">
+                    <div class="card card-dark">
                         <div class="card-header">
                             <h3 class="card-title">Ürün Bilgileri</h3>
                         </div>
@@ -71,7 +71,7 @@
                                             <label>Ürün Resmi</label>
                                             <input id="image" name="image" type="file" class="d-none" accept="image/png, image/jpg, image/jpeg" />
                                             <div class="mt-2">
-                                                <label class="btn btn-success" for="image">Ürün Resmi Yükle</label>
+                                                <label class="btn btn-outline-danger" for="image">Ürün Resmi Yükle</label>
                                             </div>
                                             <span class="text-danger">@ViewBag.ImageErrorMessage</span>
                                             <img id="image-viewer" class="img-fluid" style="height:200px;" />
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <!--Ürün Kategoriler-->
-                        <div class="card card-warning">
+                        <div class="card card-dark">
                             <div class="card-header">
                                 <h3 class="card-title">Kategori Seç(En az bir kategori seçmelisiniz!)</h3>
                             </div>
@@ -102,7 +102,7 @@
                             
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary btn-lg btn-block">Kaydet</button>
+                            <button type="submit" class="btn btn-outline-danger btn-lg btn-block">Kaydet</button>
                         </div>
                     </form>
                 </div>

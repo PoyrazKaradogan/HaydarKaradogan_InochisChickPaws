@@ -1,14 +1,14 @@
 ﻿@model List<AdminOrderViewModel>
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content-wrapper bg-dark">
     <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0">Yönetim Paneli</h1>
+            <div class="row mb-4">
+                <div class="col-sm-12">
+                    <h1 class="m-0">Admin</h1>
                 </div><!-- /.col -->
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                     <ol class="breadcrumb float-sm-right">
                 
                     
@@ -21,7 +21,7 @@
 
     <!-- Main content -->
     <section class="content">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Small boxes (Stat box) -->
             <div class="row">
                 <div class="col-lg-6 col-6">
@@ -35,7 +35,7 @@
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="#" class="small-box-footer">Toplam satılan ürünler için<i class="fas fa-arrow-circle-right"></i></a>
+                        <a asp-area="Admin" asp-controller="Order" asp-action="Index" class="small-box-footer">Toplam satılan ürünler için<i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
          
@@ -60,43 +60,7 @@
             </div>
      
 
-            <div class="row">
-                <div class="col-lg-6 col-3">
-                    <div class="card">
-                        <div class="card-header border-0">
-                            <h3 class="card-title">Son Siparişler</h3>
-                            <div class="card-tools">
-                                <a asp-area="Admin"
-                                    asp-controller="Order"
-                                    asp-action="Index"
-                                   class="card-title">Tüm Siparişler</a>
-                            </div>
-                        </div>
-                        <div class="card-body table-responsive p-0">
-                            <table class="table table-striped table-valign-middle">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Tarih</th>
-                                        <th>Üye</th>
-                                        <th>Tutar</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var order in Model)
-                                    {
-                                        <tr>
-                                            <td>@order.Id</td>
-                                            <td>@order.OrderDate</td>
-                                            <td>@order.UserName</td>
-                                            <td>@($"{order.TotalPrice:C0}")</td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
 

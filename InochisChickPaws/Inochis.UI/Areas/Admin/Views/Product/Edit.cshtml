@@ -1,6 +1,6 @@
 ﻿@model EditProductViewModel
  <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content-wrapper bg-black">
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
@@ -24,23 +24,22 @@
                         enctype="multipart/form-data"
                     >
                     <input type="hidden" asp-for="ImageUrl" />
-                    @* <input type="hidden" name="oldImageUrl" value="@Model.ImageUrl" /> *@
-                    <!--Ürün Bilgileri-->
-                    <div class="card card-success">
+                
+                    <div class="card card-dark">
                         <div class="card-header">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
                                     <h3 class="card-title">Ürün Bilgileri</h3>
                                 </div>
                                 <div>
-                                    <a asp-area="Admin" asp-controller="Product" asp-action="SoftDelete" asp-route-id="@Model.Id" class="btn btn-warning">Çöp Kutusuna Gönder</a>
+                                    <a asp-area="Admin" asp-controller="Product" asp-action="SoftDelete" asp-route-id="@Model.Id" class="btn btn-danger">Çöp Kutusuna Gönder</a>
                                 </div>
                             </div>
      
                         </div>
-                        <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-4">
+                        <div class="card-body text-black">
+                                <div class="row text-black-50">
+                                    <div class="col-sm-4 text-black">
                                         <div class="form-group">
                                             <label asp-for="Name"></label>
                                             <input asp-for="Name" type="text" class="form-control" placeholder="Ürün adını giriniz...">
@@ -82,7 +81,7 @@
                                             <input type="hidden" value="@Model.ImageUrl"  id="oldImageUrl" />
                                             <input id="image" name="image" type="file" class="d-none" accept="image/png, image/jpg, image/jpeg" />
                                             <div class="mt-2">
-                                                <label class="btn btn-success" for="image">Ürün Resmini Değiştir</label>
+                                                <label class="btn btn-dark" for="image">Ürün Resmini Değiştir</label>
                                             </div>
                                             <span class="text-danger">@ViewBag.ImageErrorMessage</span>
                                             <img src="/images/products/@Model.ImageUrl" id="image-viewer" class="img-fluid" style="height:200px;" />
@@ -94,21 +93,21 @@
 
                         </div>
                         <!--Ürün Kategoriler-->
-                        <div class="card card-warning">
-                            <div class="card-header">
+                        <div class="card card-dark text-black bg-dark">
+                            <div class="card-header text-black">
                                 <h3 class="card-title">Kategori Seç(En az bir kategori seçmelisiniz!)</h3>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body text-black">
                                 @foreach (var c in Model.Categories)
                                 {
-                                    <div class="icheck-primary d-inline mr-3">
+                                    <div class="icheck-primary d-inline mr-3 text-black">
                                         <input name="categoryIds" value="@c.Id" id="category_checkbox_@c.Id" type="checkbox" 
                                         @(Model.CategoryIds.Any(catId=>catId==c.Id) ? "checked" : "")
                                         />
                                         <label for="category_checkbox_@c.Id">@c.Name</label>
                                     </div>
                                 }
-                                <div class="text-danger mt-2">@ViewBag.CategoryErrorMessage</div>
+                                <div class="text-black mt-2">@ViewBag.CategoryErrorMessage</div>
                             </div>
                             
                         </div>

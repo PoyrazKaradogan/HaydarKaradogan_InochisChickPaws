@@ -17,3 +17,4 @@ C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Data\obj\D
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Data\obj\Debug\net7.0\Inochis.Data.pdb
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Data\obj\Debug\net7.0\Inochis.Data.genruntimeconfig.cache
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Data\obj\Debug\net7.0\ref\Inochis.Data.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.Data\obj\Debug\net7.0\Inochis.Data.sourcelink.json

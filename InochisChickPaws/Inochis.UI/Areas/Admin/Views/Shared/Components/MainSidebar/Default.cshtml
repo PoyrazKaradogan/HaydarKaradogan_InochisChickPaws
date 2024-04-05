@@ -1,8 +1,8 @@
 ﻿<!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/admin" class="brand-link text-center">
-        <span class="brand-text font-weight-light">Yönetim Paneli</span>
+    <a href="/admin" class="brand-link text-center ">
+        <span class="brand-text font-weight-light text-danger fa-2x">Admin</span>
     </a>
 
     <a href="/" target="_blank" class="brand-link text-center">
@@ -10,7 +10,7 @@
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar ">
         @await Component.InvokeAsync("SidebarUserPanel")
 
         <!-- Sidebar Menu -->
@@ -20,7 +20,7 @@
                 <li class="nav-item">
                     <a asp-area="Admin" asp-controller="Order" asp-action="Index" class="nav-link">
                         <i class="nav-icon fas fa-house-user"></i>
-                        <p>Siparişler</p>
+                        <p class="text-danger">Siparişler</p>
                     </a>
                 </li>
                 <li class="nav-item">
