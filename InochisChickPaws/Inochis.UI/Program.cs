@@ -18,7 +18,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<InochisDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection"))
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
+
 );
 
 builder.Services.AddIdentity<User, Role>()
@@ -27,19 +28,19 @@ builder.Services.AddIdentity<User, Role>()
 
 builder.Services.Configure<IdentityOptions>(options =>
 {
-    #region Parola Ayarlar�
-    options.Password.RequiredLength = 6; //Parola en az 6 karakter olmal�
-    options.Password.RequireDigit = true; //Parola say�sal de�er i�ermeli
-    options.Password.RequireNonAlphanumeric = true;//Parola �zel karakter i�ermeli
-    options.Password.RequireUppercase = true; //Parola b�y�k harf i�ermeli
-    options.Password.RequireLowercase = true; //Parola k���k harf i�ermeli
-                                              //options.Password.RequiredUniqueChars //Tekrar etmemesi istenen karakterler
+    #region Parola Ayarları
+    options.Password.RequiredLength = 6; 
+    options.Password.RequireDigit = true;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireUppercase = true; 
+    options.Password.RequireLowercase = true; 
+                                              
     #endregion
 
-    #region Hesap Kilitleme Ayarlar�
-    options.Lockout.MaxFailedAccessAttempts = 3;//�st �ste hatal� giri� denemesi s�n�r�
-    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(50);//Kilitlenmi� bir hesaba yeniden giri� yapabilmek i�in gereken bekleme s�resi
-    //options.Lockout.AllowedForNewUsers = true; //Yeniden kay�t olmaya imkan ver
+    #region Hesap Kilitleme Ayarları
+    options.Lockout.MaxFailedAccessAttempts = 3;
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(50);
+    
     #endregion
 
     options.User.RequireUniqueEmail = true;
@@ -79,7 +80,7 @@ builder.Services.AddScoped<IMessageRepository, MessageRepository>();
 
 builder.Services.AddScoped<IImageHelper, ImageHelper>();
 
-builder.Services.AddScoped<IEmailSender, SmtpEmailSender>(options=>new SmtpEmailSender(
+builder.Services.AddScoped<IEmailSender, SmtpEmailSender>(options => new SmtpEmailSender(
     builder.Configuration["EmailSender:Host"],
     builder.Configuration.GetValue<int>("EmailSender:Port"),
     builder.Configuration.GetValue<bool>("EmailSender:EnableSSL"),

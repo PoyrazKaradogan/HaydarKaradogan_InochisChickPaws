@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Inochis.Business/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Inochis.Data": "1.0.0",
           "Inochis.Shared": "1.0.0"
@@ -386,6 +387,7 @@
         "dependencies": {
           "Inochis.Entity": "1.0.0",
           "Inochis.Shared": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.15",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.15"
         },
         "runtime": {

@@ -21,5 +21,4 @@
     <ProjectReference Include="..\Inochis.Shared\Inochis.Shared.csproj" />
   </ItemGroup>
 
-
 </Project>

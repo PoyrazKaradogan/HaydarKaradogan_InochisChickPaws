@@ -2,29 +2,22 @@
 <header class="header">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-3 col-lg-3">
+            <div class="col-xl-3 col-lg-2">
                 <div class="header__logo">
-              
-                            <a href="./index.html"><img src="/ui/img/logos.png" alt=""></a>
-   
+                    <a href="./index.html"><img src="/ui/img/logos.png" alt=""></a>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-9  align-self-lg-center justify-content-center ">
+            <div class="col-xl-6 col-lg-7">
                 <nav class="header__menu">
                     <ul>
                         <li class="active">
                             <a asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
                         </li>
-                     
+                       
                         <li>
-                            <a  href="#">Kategoriler</a>
-                            <ul class="dropdown">
-                                <li><a href="./">Kolyelerimiz</a></li>
-                                <li><a href="./">Bileklik-Charm</a></li>
-                                <li><a href="./">Küpelerimiz</a></li>
-                                <li><a href="./">Setlerimiz</a></li>
-                            </ul>
+                            <a href="#">Kategoriler</a>
                         </li>
+                        
                         <li>
                             <a href="./contact.html">İletişim</a>
                         </li>
@@ -59,10 +52,10 @@
 
                     </div>
                     <ul class="header__right__widget">
-                      
+                        <li><span class="icon_search search-switch"></span></li>
                         @if (User.Identity.IsAuthenticated)
                         {
-                      
+                       
                             @await Component.InvokeAsync("ShoppingCartNotification", User.Identity.Name ?? null);
                         }
                         
@@ -71,7 +64,7 @@
             </div>
         </div>
         <div class="canvas__open">
-            <i class="fa fa-bars "></i>
+            <i class="fa fa-bars"></i>
         </div>
     </div>
 </header>

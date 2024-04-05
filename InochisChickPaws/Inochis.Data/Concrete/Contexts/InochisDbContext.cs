@@ -8,10 +8,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Inochis.Data.Extensions;
 
 namespace Inochis.Data.Concrete.Contexts
 {
-    public class InochisDbContext:IdentityDbContext<User, Role, string>
+
+    public class InochisDbContext: IdentityDbContext<User, Role, string>
     {
         public InochisDbContext(DbContextOptions options):base(options)
         {
@@ -27,6 +29,7 @@ namespace Inochis.Data.Concrete.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.SeedData();
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryConfig).Assembly);
             base.OnModelCreating(modelBuilder);
         }

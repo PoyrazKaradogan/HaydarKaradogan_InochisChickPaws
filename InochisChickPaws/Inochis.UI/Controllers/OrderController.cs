@@ -26,7 +26,7 @@ namespace Inochis.UI.Controllers
             _shoppingCartItemManager = shoppingCartItemManager;
         }
 
-        
+        //Login olmuş kullanıcının geçmiş siparişlerini gösterecek
         public IActionResult Index()
         {
             return View();
@@ -67,12 +67,15 @@ namespace Inochis.UI.Controllers
 
             if (ModelState.IsValid)
             {
+                //ÖDEME İŞLEMİ BAŞLIYOR -IYZICO
 
+                //Yapılacak ödeme isteğinin authorization seçenekleri için nesne yaratılıyor
                 Options options = new Options();
                 options.ApiKey = "sandbox-nTARaN9JaHwwdywZH1hVn8IsBzrDdfVx";
                 options.SecretKey = "sandbox-NhxWlIhryzO8JjUAfDHlyWwCBCxIllZe";
                 options.BaseUrl = "https://sandbox-api.iyzipay.com";
 
+                //Yapılacak ödeme isteği için nesne yaratılıyor
                 CreatePaymentRequest request = new CreatePaymentRequest();
                 request.Locale = Locale.TR.ToString();
                 request.ConversationId = "FS-2310-13-InochisApp";
@@ -84,6 +87,7 @@ namespace Inochis.UI.Controllers
                 request.PaymentChannel = PaymentChannel.WEB.ToString();
                 request.PaymentGroup = PaymentGroup.PRODUCT.ToString();
 
+                //Ödemenin yapılacağı kart için nesne yaratılıyor
                 PaymentCard paymentCard = new PaymentCard();
                 paymentCard.CardHolderName = orderViewModel.CardName;
                 paymentCard.CardNumber = orderViewModel.CardNumber;
@@ -93,6 +97,7 @@ namespace Inochis.UI.Controllers
                 paymentCard.RegisterCard = 0;
                 request.PaymentCard = paymentCard;
 
+                //Alıcı bilgileri için nesne yaratılıyor
                 Buyer buyer = new Buyer();
                 buyer.Id = userId;
                 buyer.Name = orderViewModel.FirstName;
@@ -126,6 +131,7 @@ namespace Inochis.UI.Controllers
                 billingAddress.ZipCode = "34742";
                 request.BillingAddress = billingAddress;
 
+                //Sepet ürünleri için nesne yaratılıyor
                 List<BasketItem> basketItems = new List<BasketItem>();
                 BasketItem basketItem;
                 foreach (var item in orderViewModel.ShoppingCart.ShoppingCartItems)
@@ -144,6 +150,7 @@ namespace Inochis.UI.Controllers
                 Payment payment = Payment.Create(request, options);
                 if (payment.Status == "success")
                 {
+                    //Eğer ödeme başarılı ise artık siparişi kendi veri tabanımıza kaydediyoruz
                     Order order = new Order
                     {
                         OrderNumber=payment.PaymentId,

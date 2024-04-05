@@ -51,9 +51,7 @@ namespace Inochis.UI.Controllers
                 var result = await _userManager.CreateAsync(user,registerViewModel.Password);
                 if (result.Succeeded)
                 {
-                    //MAIL GÖNDERME İŞLEMİ BAŞLIYOR
-                    //Token Oluşturma
-
+        
                     //var tokenCode = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     //var backUrl = Url.Action("ConfirmEmail", "Account", new
                     //{
@@ -98,9 +96,9 @@ namespace Inochis.UI.Controllers
                 User user = await _userManager.FindByNameAsync(loginViewModel.UserName);
                 if (user != null)
                 {
-                    //Olası daha önceden kalmış olan cookieyi temizliyoruz.
+                   
                     await _signInManager.SignOutAsync();
-                    //Mail onayını kontrol ediyoruz.
+                 
                     var isConfirmed = await _userManager.IsEmailConfirmedAsync(user);
                     if (!isConfirmed)
                     {

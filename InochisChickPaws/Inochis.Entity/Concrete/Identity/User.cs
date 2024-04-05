@@ -15,5 +15,6 @@ namespace Inochis.Entity.Concrete.Identity
         public string City { get; set; }
         public string Gender { get; set; }
         public DateTime? DateOfBirth { get; set; }
+      
     }
 }

@@ -165,7 +165,7 @@ ol {
 	font-weight: 600;
 	padding: 12px 30px 10px;
 	color: #ffffff;
-	background: #36a300;
+	background: #ca1515;
 }
 
 .site-btn {
@@ -324,7 +324,6 @@ ol {
 
 .header__logo {
 	padding: 26px 0;
-	margin-left:5px
 }
 
 .header__logo a {
@@ -407,21 +406,21 @@ ol {
 	position: relative;
 }
 
-	.header__menu ul li a:after {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		height: 2px;
-		background: #36a300;
-		content: "";
-		-webkit-transition: all, 0.5s;
-		-o-transition: all, 0.5s;
-		transition: all, 0.5s;
-		-webkit-transform: scale(0);
-		-ms-transform: scale(0);
-		transform: scale(0);
-	}
+.header__menu ul li a:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #ca1515;
+	content: "";
+	-webkit-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
+	transition: all, 0.5s;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+}
 
 .header__right {
 	text-align: right;
@@ -508,25 +507,24 @@ ol {
 
 .banner {
 	height: 500px;
-	margin-left:10px;
 }
 
 .banner__text span {
 	font-size: 18px;
-	color: #fff;
+	color: #ca1515;
 	text-transform: uppercase;
-	margin-left: 10px;
 }
 
 .banner__text h1 {
 	font-size: 80px;
-	color: #fff;
+	color: #111111;
+	font-family: "Cookie", cursive;
 	margin-bottom: 15px;
 }
 
 .banner__text a {
 	font-size: 14px;
-	color: #fff;
+	color: #111111;
 	text-transform: uppercase;
 	font-weight: 700;
 	position: relative;
@@ -534,15 +532,15 @@ ol {
 	display: inline-block;
 }
 
-	.banner__text a:after {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		height: 2px;
-		width: 100%;
-		background: #36a300;
-		content: "";
-	}
+.banner__text a:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: #ca1515;
+	content: "";
+}
 
 .banner__slider {
 	text-align: center;
@@ -566,7 +564,7 @@ ol {
 }
 
 .banner__slider.owl-carousel .owl-dots button.active {
-	background: #36a300;
+	background: #ca1515;
 }
 
 .banner__slider.owl-carousel .owl-dots button:last-child {
@@ -663,15 +661,15 @@ ol {
 	display: inline-block;
 }
 
-	.discount__text a:after {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		height: 2px;
-		width: 100%;
-		background: #36a300;
-		content: "";
-	}
+.discount__text a:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: #ca1515;
+	content: "";
+}
 
 .discount__text__title {
 	text-align: center;
@@ -1090,15 +1088,15 @@ ol {
 	display: inline-block;
 }
 
-	.categories__text a:after {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		height: 2px;
-		width: 100%;
-		background: #36a300;
-		content: "";
-	}
+.categories__text a:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: #ca1515;
+	content: "";
+}
 
 /*---------------------
   Product
@@ -1128,16 +1126,16 @@ ol {
 	opacity: 1;
 }
 
-	.filter__controls li:after {
-		position: absolute;
-		left: 0;
-		bottom: -4px;
-		height: 2px;
-		width: 100%;
-		background: #36a300;
-		content: "";
-		opacity: 0;
-	}
+.filter__controls li:after {
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	height: 2px;
+	width: 100%;
+	background: #ca1515;
+	content: "";
+	opacity: 0;
+}
 
 .filter__controls li:last-child {
 	margin-right: 0;
@@ -1152,9 +1150,11 @@ ol {
 	top: 0;
 }
 
-	.product__item.sale .product__item__pic .label {
-		background: #36a300;
-		.product__item.sale .product__item__text .product__price {
+.product__item.sale .product__item__pic .label {
+	background: #ca1515;
+}
+
+.product__item.sale .product__item__text .product__price {
 	color: #ca1515;
 }
 
@@ -1232,7 +1232,8 @@ ol {
 }
 
 .product__hover li:hover a {
-		background: #36a300;
+	background: #ca1515;
+}
 
 .product__hover li:hover a span {
 	color: #ffffff;
@@ -1482,20 +1483,20 @@ ol {
 	height: 5px;
 }
 
-	.filter-range-wrap .price-range.ui-widget-content .ui-slider-handle {
-		height: 14px;
-		width: 14px;
-		border-radius: 50%;
-		background: #36a300;
-		border: none;
-		outline: none;
-		cursor: pointer;
-	}
+.filter-range-wrap .price-range.ui-widget-content .ui-slider-handle {
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	background: #ca1515;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
 
-	.filter-range-wrap .price-range .ui-slider-range {
-		background: #36a300;
-		border-radius: 0;
-	}
+.filter-range-wrap .price-range .ui-slider-range {
+	background: #ca1515;
+	border-radius: 0;
+}
 
 .sidebar__sizes,
 .sidebar__color {
@@ -1783,19 +1784,19 @@ ol {
 	margin-bottom: 25px;
 }
 
-	.product__details__button .cart-btn {
-		display: inline-block;
-		font-size: 14px;
-		color: #ffffff;
-		background: #36a300;
-		font-weight: 600;
-		text-transform: uppercase;
-		padding: 14px 30px 15px;
-		border-radius: 50px;
-		float: left;
-		margin-right: 10px;
-		margin-bottom: 10px;
-	}
+.product__details__button .cart-btn {
+	display: inline-block;
+	font-size: 14px;
+	color: #ffffff;
+	background: #ca1515;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 14px 30px 15px;
+	border-radius: 50px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
 
 .product__details__button ul {
 	float: left;

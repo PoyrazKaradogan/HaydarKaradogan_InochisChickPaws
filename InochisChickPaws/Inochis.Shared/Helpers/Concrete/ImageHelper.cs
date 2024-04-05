@@ -41,9 +41,7 @@ namespace Inochis.Shared.Helpers.Concrete
             {
                 return "";
             }
-            //localhost:5000/wwwroot/images/products
-            //localhost:5000/wwwroot/images/categories
-            //localhost:5000/wwwroot/images/users
+      
             var targetFolder = Path.Combine(_imagesFolder, folderName);
             if(!Directory.Exists(targetFolder)) 
             { 

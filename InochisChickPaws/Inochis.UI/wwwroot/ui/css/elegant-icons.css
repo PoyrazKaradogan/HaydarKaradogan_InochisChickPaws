@@ -14,7 +14,7 @@
 	font-family: 'ElegantIcons';
 	content: attr(data-icon);
 	speak: none;
-	font-weight: bold;
+	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
@@ -32,12 +32,11 @@ you can use the generic selector below, but it's slower:
 	font-family: 'ElegantIcons';
 	speak: none;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
-	font-size:40px;
 }
 .arrow_up:before {
 	content: "\21";

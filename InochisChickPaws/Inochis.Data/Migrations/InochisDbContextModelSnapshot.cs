@@ -58,55 +58,55 @@ namespace Inochis.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9232),
+                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7681),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9247),
+                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7697),
                             Name = "Tüm Ürünlerimiz",
                             Url = "tum-urun"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9253),
+                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7701),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9253),
+                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7701),
                             Name = "Kolyelerimiz",
                             Url = "kolye"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9254),
+                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7702),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9254),
+                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7703),
                             Name = "Bileklik-Charmlarımız",
                             Url = "bileklik-charm"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9255),
+                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7703),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9255),
+                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7704),
                             Name = "Küpelerimiz",
                             Url = "kupe"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9256),
+                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7732),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 3, 28, 17, 58, 1, 78, DateTimeKind.Local).AddTicks(9257),
+                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7732),
                             Name = "İndirimli Ürünler",
                             Url = "indirim"
                         });
@@ -139,6 +139,29 @@ namespace Inochis.Data.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "6f548def-a5d0-40cb-86f6-ddd747423f53",
+                            Description = "Süper Yönetici haklarını taşıyan rol",
+                            Name = "SuperAdmin",
+                            NormalizedName = "SUPERADMIN"
+                        },
+                        new
+                        {
+                            Id = "fe22200b-78b6-4297-abff-be0612ffd1e4",
+                            Description = "Yönetici haklarını taşıyan rol",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "b70e45fc-cd36-4786-85f5-77183eb7ecab",
+                            Description = "Müşteri haklarını taşıyan rol",
+                            Name = "Customer",
+                            NormalizedName = "CUSTOMER"
+                        });
                 });
 
             modelBuilder.Entity("Inochis.Entity.Concrete.Identity.User", b =>
@@ -221,6 +244,31 @@ namespace Inochis.Data.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "a4e1de93-a1f4-475d-9144-255d464d6528",
+                            AccessFailedCount = 0,
+                            Address = "Ataşehir Residence No:!6/12",
+                            City = "İstanbul",
+                            ConcurrencyStamp = "5c5ff796-cf7b-4e59-b558-62abbf1fc6bf",
+                            DateOfBirth = new DateTime(1990, 5, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "poyrazkaradogan@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Poyraz",
+                            Gender = "Erkek",
+                            LastName = "Karadoğan",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "POYRAZKARADOGAN@GMAIL.COM",
+                            NormalizedUserName = "POYRAZKARADOGAN",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKPFGrboloi3TrAZQ1mPBJlCngjZ0E6FYnH/URDCfWHPv3D6kfr5kFvcS5G6+E7Hlw==",
+                            PhoneNumber = "5427643469",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "56c10bfb-4f16-4b14-873b-e11004d8ffdd",
+                            TwoFactorEnabled = false,
+                            UserName = "poyrazkaradogan"
+                        });
                 });
 
             modelBuilder.Entity("Inochis.Entity.Concrete.Order", b =>
@@ -355,7 +403,7 @@ namespace Inochis.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Inochis.Entity.Concrete.ProductCategory", b =>
@@ -388,6 +436,14 @@ namespace Inochis.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ShoppingCarts");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(3322),
+                            UserId = "a4e1de93-a1f4-475d-9144-255d464d6528"
+                        });
                 });
 
             modelBuilder.Entity("Inochis.Entity.Concrete.ShoppingCartItem", b =>
@@ -498,6 +554,13 @@ namespace Inochis.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "a4e1de93-a1f4-475d-9144-255d464d6528",
+                            RoleId = "6f548def-a5d0-40cb-86f6-ddd747423f53"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>

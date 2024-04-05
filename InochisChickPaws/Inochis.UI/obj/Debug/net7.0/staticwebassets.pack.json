@@ -8217,6 +8217,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\b3b1df50-d4ae-4240-88ec-95c3ab9661f5.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\b3b1df50-d4ae-4240-88ec-95c3ab9661f5.jpeg"
+    },
+    {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\ui\\css\\bootstrap.min.css"
     },

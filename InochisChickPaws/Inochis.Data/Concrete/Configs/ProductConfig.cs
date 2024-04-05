@@ -24,7 +24,7 @@ namespace Inochis.Data.Concrete.Configs
        
             builder.Property(p => p.CreatedDate).HasDefaultValueSql("date('now')"); 
             builder.Property(p => p.ModifiedDate).HasDefaultValueSql("date('now')"); 
-            builder.ToTable("Products");
+         
            
         }
     }
