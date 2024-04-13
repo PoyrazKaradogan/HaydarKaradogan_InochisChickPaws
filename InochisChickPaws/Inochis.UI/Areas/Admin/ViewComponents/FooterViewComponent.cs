@@ -8,7 +8,7 @@ namespace Inochis.UI.Areas.Admin.ViewComponents
 {
     public class FooterViewComponent : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync()
+        public IViewComponentResult Invoke()
         {
             return View();
         }

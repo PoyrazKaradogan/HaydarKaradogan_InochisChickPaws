@@ -12,6 +12,6 @@ namespace Inochis.Entity.Concrete
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public string Description { get; set; }
-        public List<ProductCategory> ProductCategories { get; set; }//Navigation Property
+        public List<ProductCategory> ProductCategories { get; set; }
     }
 }

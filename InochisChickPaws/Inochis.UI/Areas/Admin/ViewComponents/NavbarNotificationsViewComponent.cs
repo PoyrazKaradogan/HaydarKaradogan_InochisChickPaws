@@ -8,7 +8,7 @@ namespace Inochis.UI.Areas.Admin.ViewComponents
 {
     public class NavbarNotificationsViewComponent : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync()
+        public IViewComponentResult Invoke()
         {
             return View();
         }

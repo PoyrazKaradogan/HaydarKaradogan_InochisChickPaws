@@ -10,12 +10,18 @@ namespace Inochis.Shared.ResponseViewModels
     public class Response<T>
     {
         public T Data { get; set; }
+
+
+
         public string Error { get; set; }
+        public string Message { get; set; }
+
+
+
         public bool IsSucceeded { get; set; }
 
        
-        /// <param name="data">Geri döndürülecek veri</param>
-        /// <returns>Response<typeparamref name="T"/></returns>
+ 
         public static Response<T> Success(T data)
         {
             return new Response<T>
@@ -26,7 +32,7 @@ namespace Inochis.Shared.ResponseViewModels
         }
         
        
-        /// <returns>Response<typeparamref name="T"/></returns>
+       
         public static Response<T> Success()
         {
             return new Response<T>
@@ -38,7 +44,7 @@ namespace Inochis.Shared.ResponseViewModels
         
 
         /// <param name="error">Hata metni</param>
-        /// <returns>Response<typeparamref name="T"/></returns>
+
         public static Response<T> Fail(string error)
         {
             return new Response<T>

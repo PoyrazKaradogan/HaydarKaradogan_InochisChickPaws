@@ -10,6 +10,8 @@ namespace Inochis.Shared.ViewModels
     public class MessageViewModel
     {
         public MessageDetailsViewModel MessageDetails { get; set; }
+        public MessageViewModel() { }
+
         public List<UserViewModel> UserList { get; set; }
     }
 }

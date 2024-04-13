@@ -164,7 +164,11 @@ namespace Inochis.UI.Controllers
         {
             return View();
         }
-    
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> Profile()
         {
             var userId = _userManager.GetUserId(User);
@@ -225,11 +229,7 @@ namespace Inochis.UI.Controllers
             return View(userProfileViewModel);
         }
 
-        public async Task<IActionResult> ChangePassword()
-        {
-            return View();
-        }
-
+ 
         [HttpPost]
         public async Task<IActionResult> ChangePassword(ChangePasswordViewModel changePasswordViewModel)
         {

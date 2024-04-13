@@ -10,17 +10,17 @@ namespace Inochis.Shared.ViewModels.IdentityModels
 {
     public class ChangePasswordViewModel
     {
-        [DisplayName("Eski şifreniz")]
+        [DisplayName("Eski şifreniz:")]
         [Required(ErrorMessage ="{0} alanı boş bırakılamaz!")]
         [DataType(DataType.Password)]
         public string OldPassword { get; set; }
 
-        [DisplayName("Yeni şifreniz")]
+        [DisplayName("Yeni şifreniz:")]
         [Required(ErrorMessage = "{0} alanı boş bırakılamaz!")]
         [DataType(DataType.Password)]
         public string NewPassword { get; set; }
 
-        [DisplayName("Yeni şifreniz tekrar")]
+        [DisplayName("Yeni şifreniz tekrar:")]
         [Required(ErrorMessage = "{0} alanı boş bırakılamaz!")]
         [DataType(DataType.Password)]
         [Compare("NewPassword",ErrorMessage ="Şifreler uyuşmuyor!")]

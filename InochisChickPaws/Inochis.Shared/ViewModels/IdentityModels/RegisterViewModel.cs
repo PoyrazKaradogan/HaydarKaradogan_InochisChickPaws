@@ -22,7 +22,7 @@ namespace Inochis.Shared.ViewModels.IdentityModels
         [Required(ErrorMessage = "Lütfen Kullanıcı adı alanını boş bırakmayınız.")]
         public string UserName { get; set; }
 
-        [DisplayName("Email :")]
+        [DisplayName("Email Adresiniz :")]
         [Required(ErrorMessage = "Lütfen email alanını boş bırakmayınız.")]
         [DataType(DataType.EmailAddress,ErrorMessage ="Lütfen geçerli bir email adresi giriniz.")]
         public string Email { get; set; }

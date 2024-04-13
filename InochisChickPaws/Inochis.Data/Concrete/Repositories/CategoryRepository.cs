@@ -17,14 +17,14 @@ namespace Inochis.Data.Concrete.Repositories
 
         }
 
-        private InochisDbContext MiniShopDbContext
+        private InochisDbContext InochisDbContext
         {
             get { return _dbContext as InochisDbContext; }
         }
 
         public async Task<List<Category>> GetTopCategories(int n)
         {
-            List<Category> categories = await MiniShopDbContext
+            List<Category> categories = await InochisDbContext
                 .Categories
                 .Where(c=>c.IsActive && !c.IsDeleted)
                 .Take(n)

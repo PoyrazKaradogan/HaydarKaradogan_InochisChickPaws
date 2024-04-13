@@ -81,7 +81,7 @@ namespace Inochis.UI.Areas.Admin.Controllers
                     _notyfService.Error(result.Error);
                 return RedirectToAction("Index");
             }
-            //ViewBag.CategoryErrorMessage = model.CategoryIds.Count == 0 ? "Herhangi bir kategori seçmeden, ürün kaydı yapılamaz" : null;
+        
             if (model.CategoryIds.Count == 0) _notyfService.Error("En az bir kategori seçmelisiniz.");
             ViewBag.ImageErrorMessage = model.ImageUrl == null || model.ImageUrl == "" ? "Resim hatalı!" : null;
             var categories = await _categoryManager.GetActiveCategories();

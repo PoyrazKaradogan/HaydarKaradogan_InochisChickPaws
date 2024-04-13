@@ -11,12 +11,12 @@ namespace Inochis.Shared.ViewModels.IdentityModels
     public class LoginViewModel
     {
         [Required(ErrorMessage ="Boş bırakılamaz")]
-        [DisplayName("Kullanıcı Adı")]
+        [DisplayName("Kullanıcı Adı:")]
         public string UserName { get; set; }
 
 
         [Required(ErrorMessage = "Boş bırakılamaz")]
-        [DisplayName("Parola")]
+        [DisplayName("Parolanız:")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 

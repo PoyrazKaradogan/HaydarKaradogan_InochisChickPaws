@@ -14,7 +14,12 @@ namespace Inochis.Shared.ViewModels
         public decimal Price { get; set; }
         public string ImageUrl { get; set; }
         public string Url { get; set; }
+
         public bool IsActive { get; set; }
+
+
+
+
         public bool IsHome { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime CreatedDate { get; set; }

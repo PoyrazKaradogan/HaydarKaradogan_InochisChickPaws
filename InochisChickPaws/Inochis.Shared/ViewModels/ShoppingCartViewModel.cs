@@ -10,7 +10,10 @@ namespace Inochis.Shared.ViewModels
     {
         public int Id { get; set; }
         public string UserId { get; set; }
+
+
         public List<ShoppingCartItemViewModel> ShoppingCartItems { get; set; }
+
 
         public decimal TotalPrice()
         {

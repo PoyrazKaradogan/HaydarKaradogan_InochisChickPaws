@@ -1,53 +1,52 @@
 ﻿    <!-- Header Section Begin -->
 <header class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-3 col-lg-2">
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-xl-3 col-lg-2 ">
                 <div class="header__logo">
-                    <a href="./index.html"><img src="/ui/img/logos.png" alt=""></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="/ui/img/logos.png" alt=""></a>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-7">
+            <div class="col-xl-5 col-lg-7 mt-5">
                 <nav class="header__menu">
                     <ul>
                         <li class="active">
                             <a asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
                         </li>
-                       
-                        <li>
-                            <a href="#">Kategoriler</a>
-                        </li>
+                <li>
+                            <a a asp-area="" asp-controller="Home" asp-action="Hakkimizda">Hakkımızda</a>
+                </li>
                         
                         <li>
-                            <a href="./contact.html">İletişim</a>
+                            <a asp-area="" asp-controller="Home" asp-action="Contact">İletişim</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-3">
                 <div class="header__right">
                     <div class="header__right__auth">
                         @if (!User.Identity.IsAuthenticated)
                         {
                             <a asp-area=""
                                asp-controller="Account"
-                               asp-action="Login">Giriş Yap</a>
+                               asp-action="Login">Login</a>
                             <a asp-area=""
                                asp-controller="Account"
-                            asp-action="Register">Kayıt Ol</a>
+                            asp-action="Register">Register</a>
                         }else{
                             if(User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
                             {
                                 <a asp-area="Admin"
                                    asp-controller="Home"
-                                   asp-action="Index">Admin Panel</a>
+                                   asp-action="Index">Admin</a>
                             }
                             <a asp-area=""
                                asp-controller="Account"
                                asp-action="Profile">@User.Identity.Name</a>
                             <a asp-area=""
                                asp-controller="Account"
-                               asp-action="Logout">Çıkış</a>
+                               asp-action="Logout">Exit</a>
                         }
 
                     </div>
@@ -55,7 +54,12 @@
                      
                         @if (User.Identity.IsAuthenticated)
                         {
-                       
+                            <li>
+                                <a href="#">
+                                    <span class="icon_heart_alt"></span>
+                                    <div class="tip">2</div>
+                                </a>
+                            </li>
                             @await Component.InvokeAsync("ShoppingCartNotification", User.Identity.Name ?? null);
                         }
                         

@@ -18,5 +18,15 @@ namespace Inochis.UI.Controllers
             var products = await _productManager.GetAllNonDeletedAsync(false);
             return View(products.Data);
         }
+        public async Task<IActionResult> Contact()
+        {
+            var products = await _productManager.GetAllNonDeletedAsync(false);
+            return View(products.Data);
+        }
+        public async Task<IActionResult> Hakkimizda()
+        {
+            var products = await _productManager.GetAllNonDeletedAsync(false);
+            return View(products.Data);
+        }
     }
 }

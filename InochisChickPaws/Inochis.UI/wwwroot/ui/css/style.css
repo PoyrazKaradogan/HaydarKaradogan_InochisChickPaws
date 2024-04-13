@@ -31,11 +31,13 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+
 html,
 body {
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
 	-webkit-font-smoothing: antialiased;
+	background-color:aliceblue;
 }
 
 h1,
@@ -76,7 +78,7 @@ h6 {
 
 p {
 	font-size: 14px;
-	font-family: "Montserrat", sans-serif;
+	font-family: sans-serif;
 	color: #666666;
 	font-weight: 400;
 	line-height: 24px;
@@ -128,7 +130,7 @@ ol {
 	bottom: -4px;
 	height: 2px;
 	width: 70px;
-	background: #ca1515;
+	background: #673ab7;
 	content: "";
 }
 
@@ -165,13 +167,13 @@ ol {
 	font-weight: 600;
 	padding: 12px 30px 10px;
 	color: #ffffff;
-	background: #ca1515;
+	background: #673ab7;
 }
 
 .site-btn {
 	font-size: 14px;
 	color: #ffffff;
-	background: #ca1515;
+	background: #673ab7;
 	font-weight: 600;
 	border: none;
 	text-transform: uppercase;
@@ -412,7 +414,7 @@ ol {
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background: #ca1515;
+	background: #673ab7;
 	content: "";
 	-webkit-transition: all, 0.5s;
 	-o-transition: all, 0.5s;
@@ -433,8 +435,8 @@ ol {
 }
 
 .header__right__auth a {
-	font-size: 12px;
-	color: #666666;
+	font-size: 16px;
+	color: #ca1515;
 	position: relative;
 	margin-right: 8px;
 }
@@ -462,8 +464,8 @@ ol {
 .header__right__widget li {
 	list-style: none;
 	display: inline-block;
-	font-size: 18px;
-	color: #111111;
+	font-size: 40px;
+	color: #673ab7;
 	margin-right: 20px;
 	cursor: pointer;
 }
@@ -473,14 +475,14 @@ ol {
 }
 
 .header__right__widget li a {
-	font-size: 18px;
-	color: #111111;
+	font-size: 30px;
+	color: #ca1515;
 	position: relative;
 }
 
 .header__right__widget li a .tip {
 	position: absolute;
-	right: -12px;
+
 	top: -11px;
 	height: 18px;
 	width: 18px;
@@ -518,7 +520,7 @@ ol {
 .banner__text h1 {
 	font-size: 80px;
 	color: #111111;
-	font-family: "Cookie", cursive;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 	margin-bottom: 15px;
 }
 
@@ -538,7 +540,7 @@ ol {
 	bottom: 0;
 	height: 2px;
 	width: 100%;
-	background: #ca1515;
+	background: #673ab7;
 	content: "";
 }
 
@@ -667,7 +669,7 @@ ol {
 	bottom: 0;
 	height: 2px;
 	width: 100%;
-	background: #ca1515;
+	background: #673ab7;
 	content: "";
 }
 
@@ -701,7 +703,7 @@ ol {
 .discount__text__title h2 {
 	font-size: 60px;
 	color: #ca1515;
-	font-family: "Cookie", cursive;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 	line-height: 46px;
 	margin-bottom: 10px;
 }
@@ -1064,9 +1066,12 @@ ol {
 }
 
 .categories__text h1 {
-	font-family: "Cookie", cursive;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color: #111111;
 	margin-bottom: 5px;
+	font-size: 40px;	
+	font-weight:bold;
+	background-color:#fff;
 }
 
 .categories__text h4 {
@@ -1094,7 +1099,7 @@ ol {
 	bottom: 0;
 	height: 2px;
 	width: 100%;
-	background: #ca1515;
+	background: #673ab7;
 	content: "";
 }
 
@@ -1132,7 +1137,7 @@ ol {
 	bottom: -4px;
 	height: 2px;
 	width: 100%;
-	background: #ca1515;
+	background:#673ab7;
 	content: "";
 	opacity: 0;
 }
@@ -1151,7 +1156,7 @@ ol {
 }
 
 .product__item.sale .product__item__pic .label {
-	background: #ca1515;
+	background:#673ab7;
 }
 
 .product__item.sale .product__item__text .product__price {
@@ -1189,7 +1194,7 @@ ol {
 }
 
 .product__item__pic .label.sale {
-	background: #ca1515;
+	background: #673ab7;
 }
 
 .product__hover {
@@ -1232,7 +1237,7 @@ ol {
 }
 
 .product__hover li:hover a {
-	background: #ca1515;
+	background: #673ab7;
 }
 
 .product__hover li:hover a span {
@@ -1487,14 +1492,14 @@ ol {
 	height: 14px;
 	width: 14px;
 	border-radius: 50%;
-	background: #ca1515;
+	background: #673ab7;
 	border: none;
 	outline: none;
 	cursor: pointer;
 }
 
 .filter-range-wrap .price-range .ui-slider-range {
-	background: #ca1515;
+	background: #673ab7;
 	border-radius: 0;
 }
 
@@ -1788,7 +1793,7 @@ ol {
 	display: inline-block;
 	font-size: 14px;
 	color: #ffffff;
-	background: #ca1515;
+	background: #673ab7;
 	font-weight: 600;
 	text-transform: uppercase;
 	padding: 14px 30px 15px;
@@ -2765,7 +2770,7 @@ ol {
 .blog__details__item__title .tip {
 	font-size: 12px;
 	color: #ffffff;
-	background: #ca1515;
+	background: #673ab7;
 	text-transform: uppercase;
 	font-weight: 500;
 	display: inline-block;
@@ -2932,7 +2937,7 @@ ol {
 	bottom: -5px;
 	height: 1px;
 	width: 100%;
-	background: #ca1515;
+	background: #673ab7;
 	content: "";
 }
 

@@ -99,7 +99,7 @@
                         <h6>Sepet Tutarı</h6>
                         <ul>
                             @{
-                                var cartSubTotal = Model.TotalPrice() / 1.2m;// varsayılan vergi oranı %20
+                                var cartSubTotal = Model.TotalPrice() / 1.2m;
                                 var cartTotal = Model.TotalPrice();
                             }
                             <li>KDV hariç tutar: <span id="sub-total" >@($"{(Model.TotalPrice() / 1.2m):C0}")</span></li>

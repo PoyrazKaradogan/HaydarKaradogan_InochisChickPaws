@@ -29,13 +29,13 @@ namespace Inochis.UI.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> AssignRoles(string id)
         {
-            //Id'si gönderilen, rol ataması yapılacak user'ı buluyoruz.
+
             var user = await _userManager.FindByIdAsync(id);
 
-            //Bulduğumuz user'ın var olan rollerini alıyoruz.
+   
             var userRoles = await _userManager.GetRolesAsync(user);
 
-            //İlgili user'ın rollerini de içerecek şekilde rol listesini yaratıyoruz.
+           
             var roles = await _roleManager.Roles.Select(r => new AssignRoleViewModel
             {
                 RoleId=r.Id,
@@ -43,7 +43,7 @@ namespace Inochis.UI.Areas.Admin.Controllers
                 IsAssigned=userRoles.Any(x=>x==r.Name)
             }).ToListAsync();
 
-            // View'in ihtiyacı olan user id ve rol listesini içeren modeli yaratıyoruz.
+
             var userRolesViewModel = new UserRolesViewModel
             {
                 Id = user.Id,
