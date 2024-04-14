@@ -48,7 +48,7 @@ namespace Inochis.UI.Controllers
                 PhoneNumber = user.PhoneNumber,
                 Note="Lütfen hızlı gelsin.",
                 CardNumber= "4987490000000002",
-                CardName="Sezen Aksu",
+                CardName="Poyraz Karadogan",
                 ExpirationMonth="8",
                 ExpirationYear="2028",
                 Cvc="343",
