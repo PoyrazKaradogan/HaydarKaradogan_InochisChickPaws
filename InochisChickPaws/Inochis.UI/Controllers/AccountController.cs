@@ -114,7 +114,7 @@ namespace Inochis.UI.Controllers
                         await _userManager.SetLockoutEndDateAsync(user, null);
 
                         var returnUrl = TempData["ReturnUrl"]?.ToString();
-                        _notyfService.Information("Giriş başarılı. Hoş geldiniz.");
+                        _notyfService.Custom(" Hoş geldiniz. Hesabınıza erişim sağladınız.");
                         if (!String.IsNullOrEmpty(returnUrl))
                         {
                             return Redirect(returnUrl);
@@ -128,14 +128,14 @@ namespace Inochis.UI.Controllers
                         {
                             var timeLeft = (lockoutEndDate.Value - DateTime.Now).Seconds;
                             if (timeLeft == _userManager.Options.Lockout.DefaultLockoutTimeSpan.TotalSeconds){
-                                _notyfService.Information($"Hesabınız kilitlenmiştir. Lütfen {lockoutEndDate} zamanından sonra deneyiniz.");
+                                _notyfService.Custom($"Hesabınız kilitlenmiştir. Lütfen {lockoutEndDate} zamanından sonra deneyiniz.");
                             }
                         }
                         else
                             {
                                 var attempCount = _signInManager.Options.Lockout.MaxFailedAccessAttempts;
                                 var accessFailedCount = attempCount - failedAttempCount;
-                                _notyfService.Information($"Kalan deneme hakkınız: {accessFailedCount}");
+                                _notyfService.  Custom($"Kalan deneme hakkınız: {accessFailedCount}");
                             }
                         
                     }
@@ -143,7 +143,7 @@ namespace Inochis.UI.Controllers
                     {
                         var lockoutEndDate = await _userManager.GetLockoutEndDateAsync(user);
                         var timeLeft = (lockoutEndDate.Value - DateTime.Now).Seconds;
-                        _notyfService.Information($"Hesabınız kilitli. Lütfen {timeLeft} sn sonra yeniden deneyiniz.");
+                        _notyfService.Custom($"Hesabınız kilitli. Lütfen {timeLeft} sn sonra yeniden deneyiniz.");
                         return View(loginViewModel);
                     }
                 }
@@ -156,7 +156,7 @@ namespace Inochis.UI.Controllers
         {
             await _signInManager.SignOutAsync();
             TempData["ReturnUrl"] = null;
-            _notyfService.Success("Çıkış başarılı, güle güle");
+            _notyfService.Custom("Çıkış başarılı, güle güle");
             return Redirect("~/");
         }
         
@@ -217,7 +217,7 @@ namespace Inochis.UI.Controllers
                     await _userManager.UpdateSecurityStampAsync(user);
                     await _signInManager.SignOutAsync();
                     await _signInManager.SignInAsync(user, false);
-                    _notyfService.Success("Profiliniz başarıyla güncellenmiştir");
+                    _notyfService.Custom("Profiliniz başarıyla güncellenmiştir");
                     return Redirect("~/");
                 }
                 foreach (var error in result.Errors)
@@ -245,7 +245,7 @@ namespace Inochis.UI.Controllers
                         var updateSecurityStampResult = await _userManager.UpdateSecurityStampAsync(user);
                         await _signInManager.SignOutAsync();
                         await _signInManager.PasswordSignInAsync(user, changePasswordViewModel.NewPassword, false, false);
-                        _notyfService.Success("Şifreniz başarıyla değiştirilmiştir.");
+                        _notyfService.Custom("Şifreniz başarıyla değiştirilmiştir.");
                         return RedirectToAction("Profile");
                     }
                     foreach (var error in result.Errors)
@@ -263,13 +263,13 @@ namespace Inochis.UI.Controllers
         {
             if (userId == null || token == null)
             {
-                _notyfService.Warning("Bilgilerinizde hata var. Kontrol ediniz.");
+                _notyfService.Custom("Bilgilerinizde hata var. Kontrol ediniz.");
                 return View();
             }
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
             {
-                _notyfService.Error("Kullanıcı bilgilerinize ulaşılamadı.");
+                _notyfService.Custom("Kullanıcı bilgilerinize ulaşılamadı.");
                 return View();
             }
             var result = await _userManager.ConfirmEmailAsync(user, token);
@@ -280,7 +280,7 @@ namespace Inochis.UI.Controllers
                 _notyfService.Information("Hesabınız başarıyla onaylanmıştır.");
                 return RedirectToAction("Login");
             }
-            _notyfService.Error("Hesabınız onaylanırken bir sorun oluştu, daha sonra tekrar deneyiniz.");
+            _notyfService.Custom("Hesabınız onaylanırken bir sorun oluştu, daha sonra tekrar deneyiniz.");
             return View();
         }
 

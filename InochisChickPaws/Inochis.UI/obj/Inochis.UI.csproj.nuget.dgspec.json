@@ -360,6 +360,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.15, )"
+            },
+            "SixLabors.ImageSharp.Drawing": {
+              "target": "Package",
+              "version": "[2.1.2, )"
             }
           },
           "imports": [

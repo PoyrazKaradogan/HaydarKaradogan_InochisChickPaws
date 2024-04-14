@@ -86,3 +86,6 @@ C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Deb
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Debug\net7.0\Inochis.UI.genruntimeconfig.cache
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Debug\net7.0\ref\Inochis.UI.dll
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Debug\net7.0\Inochis.UI.sourcelink.json
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\bin\Debug\net7.0\SixLabors.Fonts.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\bin\Debug\net7.0\SixLabors.ImageSharp.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\bin\Debug\net7.0\SixLabors.ImageSharp.Drawing.dll

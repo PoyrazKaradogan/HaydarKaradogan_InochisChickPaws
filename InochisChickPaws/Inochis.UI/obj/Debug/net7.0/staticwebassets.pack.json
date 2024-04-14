@@ -8221,6 +8221,10 @@
       "PackagePath": "staticwebassets\\images\\products\\22e3e1d3-c48c-4769-8eb9-b1050064f430.jpeg"
     },
     {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\48367737-67f2-4b79-b2fb-e1a7a5290361.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\48367737-67f2-4b79-b2fb-e1a7a5290361.jpeg"
+    },
+    {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\969237be-3594-4744-8234-c47100dd1f44.jpeg",
       "PackagePath": "staticwebassets\\images\\products\\969237be-3594-4744-8234-c47100dd1f44.jpeg"
     },
@@ -8231,6 +8235,10 @@
     {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\b3b1df50-d4ae-4240-88ec-95c3ab9661f5.jpeg",
       "PackagePath": "staticwebassets\\images\\products\\b3b1df50-d4ae-4240-88ec-95c3ab9661f5.jpeg"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\b530933e-f672-4c48-84fb-c83d99b22d91.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\b530933e-f672-4c48-84fb-c83d99b22d91.jpeg"
     },
     {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\d5bf774c-cb42-40c6-bba0-ef95a8cd6c05.jpg",
@@ -8317,8 +8325,20 @@
       "PackagePath": "staticwebassets\\ui\\fonts\\fontawesome-webfont.woff2"
     },
     {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\banner\\banner-1.jpg",
+      "PackagePath": "staticwebassets\\ui\\img\\banner\\banner-1.jpg"
+    },
+    {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\banner\\banner-1.png",
       "PackagePath": "staticwebassets\\ui\\img\\banner\\banner-1.png"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\banner\\whatsapp.png",
+      "PackagePath": "staticwebassets\\ui\\img\\banner\\whatsapp.png"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\brand.jpg",
+      "PackagePath": "staticwebassets\\ui\\img\\brand.jpg"
     },
     {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-1.jpg",
