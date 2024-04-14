@@ -36,9 +36,8 @@ namespace Inochis.Business.Mappings
                 .ForMember(e => e.Product, options =>
                     options.MapFrom(v => new Product { Price = v.ProductPrice, Name = v.ProductName, ImageUrl = v.ProductImageUrl })
                 ).ReverseMap();
-
             CreateMap<ShoppingCart, ShoppingCartViewModel>().ReverseMap();
-            CreateMap<Message, MessageDetailsViewModel>().ReverseMap();
+            CreateMap<Message, MessageViewModel>().ReverseMap();
         }
     }
 }

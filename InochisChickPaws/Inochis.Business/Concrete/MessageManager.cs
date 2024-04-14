@@ -1,15 +1,11 @@
 ﻿using AutoMapper;
-using Microsoft.EntityFrameworkCore;
+
 using Inochis.Business.Abstract;
 using Inochis.Data.Abstract;
 using Inochis.Entity.Concrete;
 using Inochis.Shared.ResponseViewModels;
 using Inochis.Shared.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Inochis.Business.Concrete
 {
@@ -24,55 +20,68 @@ namespace Inochis.Business.Concrete
             _repository = messageRepository;
         }
 
-        public async Task<Response<MessageDetailsViewModel>> CreateAsync(MessageDetailsViewModel messageDetailsViewModel)
+        public async Task<Response<MessageViewModel>> CreateAsync(MessageViewModel messageViewModel)
         {
-            var message = _mapper.Map<Message>(messageDetailsViewModel);
+            var message = _mapper.Map<Message>(messageViewModel);
             var createdMessage = await _repository.CreateAsync(message);
             if (createdMessage == null)
             {
-                return Response<MessageDetailsViewModel>.Fail("Mesaj gönderilemedi");
+                return Response<MessageViewModel>.Fail("Mesaj gönderilemedi");
             }
-            var createdMessageDetailsViewModel = _mapper.Map<MessageDetailsViewModel>(createdMessage);
-            return Response<MessageDetailsViewModel>.Success(createdMessageDetailsViewModel);
+            var createdMessageViewModel = _mapper.Map<MessageViewModel>(createdMessage);
+            return Response<MessageViewModel>.Success(createdMessageViewModel);
         }
 
-        public async Task<Response<List<MessageDetailsViewModel>>> GetAllReceivedMessageAsync(string userId, bool isRead = false)
+        public async Task<Response<List<MessageViewModel>>> GetAllReceivedMessageAsync(string toUserId, bool isRead)
         {
-            var messageList = await _repository.GetAllAsync(x => x.FromId == userId && x.IsRead==isRead);
+            var messageList = await _repository.GetAllAsync(x => x.ToId == toUserId && x.IsRead == isRead);
             if (messageList.Count == 0)
             {
                 var infoText = isRead ? "Okunmuş" : "Okunmamış";
-                return Response<List<MessageDetailsViewModel>>.Fail($"{infoText} mesajınız bulunmamaktadır.");
+                return Response<List<MessageViewModel>>.Fail($"{infoText} mesajınız bulunmamaktadır.");
             }
-            var messageViewModelList = _mapper.Map<List<MessageDetailsViewModel>>(messageList);
-            return Response<List<MessageDetailsViewModel>>.Success(messageViewModelList);
+            messageList = messageList.OrderByDescending(x => x.SendingDate).ToList();
+            var messageViewModelList = _mapper.Map<List<MessageViewModel>>(messageList);
+            return Response<List<MessageViewModel>>.Success(messageViewModelList);
         }
 
-        public async Task<Response<List<MessageDetailsViewModel>>> GetAllSentMessageAsync(string userId)
+        public async Task<Response<List<MessageViewModel>>> GetAllReceivedMessageAsync(string toUserId)
         {
-            var messageList = await _repository.GetAllAsync(x=>x.FromId==userId);
+            var messageList = await _repository.GetAllAsync(x => x.ToId == toUserId);
             if (messageList.Count == 0)
             {
-                return Response<List<MessageDetailsViewModel>>.Fail("Giden kutusu boş");
+                return Response<List<MessageViewModel>>.Fail($"Hiç mesajınız bulunmamaktadır.");
             }
-            var messageViewModelList = _mapper.Map<List<MessageDetailsViewModel>>(messageList);
-            return Response<List<MessageDetailsViewModel>>.Success(messageViewModelList);
+            messageList = messageList.OrderByDescending(x => x.SendingDate).ToList();
+            var messageViewModelList = _mapper.Map<List<MessageViewModel>>(messageList);
+            return Response<List<MessageViewModel>>.Success(messageViewModelList);
         }
 
-        public async Task<Response<MessageDetailsViewModel>> GetByIdAsync(int id)
+        public async Task<Response<List<MessageViewModel>>> GetAllSentMessageAsync(string fromUserId)
+        {
+            var messageList = await _repository.GetAllAsync(x => x.FromId == fromUserId);
+            if (messageList.Count == 0)
+            {
+                return Response<List<MessageViewModel>>.Fail("Giden kutusu boş");
+            }
+            var messageViewModelList = _mapper.Map<List<MessageViewModel>>(messageList);
+            return Response<List<MessageViewModel>>.Success(messageViewModelList);
+        }
+
+        public async Task<Response<MessageViewModel>> GetByIdAsync(int id)
         {
             var message = await _repository.GetByIdAsync(x => x.Id == id);
             if (message == null)
             {
-                return Response<MessageDetailsViewModel>.Fail("Mesaj açılamadı");
+                return Response<MessageViewModel>.Fail("Mesaj açılamadı");
             }
-            var messageDetailsViewModel = _mapper.Map<MessageDetailsViewModel>(message);
-            return Response<MessageDetailsViewModel>.Success(messageDetailsViewModel);
+            var messageViewModel = _mapper.Map<MessageViewModel>(message);
+            return Response<MessageViewModel>.Success(messageViewModel);
         }
 
-        public async Task<Response<int>> GetMessageCount(string userId, bool isRead = false)
+        public async Task<Response<int>> GetMessageCountAsync(string userId, bool isRead = false)
         {
-            var count = await _repository.GetCount(x => x.FromId==userId && x.IsRead==isRead);
+            var count = await _repository.GetCount(x => x.ToId == userId && x.IsRead == isRead);
             return Response<int>.Success(count);
         }
 
@@ -84,6 +93,14 @@ namespace Inochis.Business.Concrete
                 return Response<NoContent>.Fail("Silinecek mesaj bulunamadı");
             }
             await _repository.HardDeleteAsync(message);
+            return Response<NoContent>.Success();
+        }
+
+        public async Task<Response<NoContent>> MakeRead(int id)
+        {
+            var message = await _repository.GetByIdAsync(x => x.Id == id);
+            message.IsRead = true;
+            await _repository.UpdateAsync(message);
             return Response<NoContent>.Success();
         }
     }

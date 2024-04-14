@@ -49,14 +49,8 @@ namespace Inochis.Data.Concrete.Configs
                         Name = "Küpelerimiz",
                         Description = "",
                         Url = "kupe"
-                    },
-                    new Category
-                    {
-                        Id = 5,
-                        Name = "İndirimli Ürünler",
-                        Description = "",
-                        Url = "indirim"
                     }
+                   
                 );
         }
     }

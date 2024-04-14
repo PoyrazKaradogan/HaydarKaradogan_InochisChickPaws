@@ -1,6 +1,15 @@
-﻿<li>
-    <a href="#">
-        <span class="icon_heart_alt"></span>
-        <div class="tip">2</div>
+﻿@model int
+<li>
+    <a asp-area=""
+       asp-controller="Message"
+       asp-action="Index">
+        @{
+            bool isShowCount = Model == 0 ? false : true;
+        }
+        <span class="icon_mail_alt"></span>
+        @if (isShowCount)
+        {
+            <div class="tip">@Model</div>
+        }
     </a>
 </li>

@@ -8305,20 +8305,56 @@
       "PackagePath": "staticwebassets\\ui\\img\\banner\\banner-1.png"
     },
     {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-1.jpg",
+      "PackagePath": "staticwebassets\\ui\\img\\categories\\category-1.jpg"
+    },
+    {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-1.png",
       "PackagePath": "staticwebassets\\ui\\img\\categories\\category-1.png"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-2.jpg",
+      "PackagePath": "staticwebassets\\ui\\img\\categories\\category-2.jpg"
     },
     {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-2.png",
       "PackagePath": "staticwebassets\\ui\\img\\categories\\category-2.png"
     },
     {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-3.jpg",
+      "PackagePath": "staticwebassets\\ui\\img\\categories\\category-3.jpg"
+    },
+    {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-3.png",
       "PackagePath": "staticwebassets\\ui\\img\\categories\\category-3.png"
     },
     {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-4.jpg",
+      "PackagePath": "staticwebassets\\ui\\img\\categories\\category-4.jpg"
+    },
+    {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-4.png",
       "PackagePath": "staticwebassets\\ui\\img\\categories\\category-4.png"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-5.jpg",
+      "PackagePath": "staticwebassets\\ui\\img\\categories\\category-5.jpg"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\category-5.png",
+      "PackagePath": "staticwebassets\\ui\\img\\categories\\category-5.png"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\full_theme_banner_image_1.webp",
+      "PackagePath": "staticwebassets\\ui\\img\\categories\\full_theme_banner_image_1.webp"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\images (1).jpeg",
+      "PackagePath": "staticwebassets\\ui\\img\\categories\\images (1).jpeg"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\categories\\images.jpeg",
+      "PackagePath": "staticwebassets\\ui\\img\\categories\\images.jpeg"
     },
     {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\logo.jpg",
@@ -8347,6 +8383,14 @@
     {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\payment\\payment-5.png",
       "PackagePath": "staticwebassets\\ui\\img\\payment\\payment-5.png"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\taki-banner.png",
+      "PackagePath": "staticwebassets\\ui\\img\\taki-banner.png"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\img\\whatsapp.png",
+      "PackagePath": "staticwebassets\\ui\\img\\whatsapp.png"
     },
     {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\js\\bootstrap.min.js",

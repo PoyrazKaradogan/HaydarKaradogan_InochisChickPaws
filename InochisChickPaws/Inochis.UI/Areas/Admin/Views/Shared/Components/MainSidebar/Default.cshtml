@@ -52,35 +52,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
-                        <p>
-                            Kategoriler
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Kategori Listesi</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Yeni Kategori</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/inline.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Çöp Kutusu</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+          
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tree"></i>
@@ -109,7 +81,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a asp-area="Admin" asp-controller="User" action="GetCustomerUsers" class="nav-link">
+                            <a  asp-area="Admin" asp-controller="User" action="GetCustomerUsers" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Müşteriler</p>
                             </a>
@@ -117,21 +89,14 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a asp-area="" asp-controller="Message" asp-action="Index" class="nav-link">
                         <i class="nav-icon fas fa-house-user"></i>
                         <p>
                             Mesajlar
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
-                        <i class="nav-icon fas fa-house-user"></i>
-                        <p>
-                            Çıkış Yap
-                        </p>
-                    </a>
-                </li>
+             
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

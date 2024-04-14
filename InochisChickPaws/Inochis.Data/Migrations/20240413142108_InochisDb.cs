@@ -79,6 +79,26 @@ namespace Inochis.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Messages",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    SendingDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    Text = table.Column<string>(type: "TEXT", nullable: true),
+                    ToId = table.Column<string>(type: "TEXT", nullable: true),
+                    ToName = table.Column<string>(type: "TEXT", nullable: true),
+                    FromId = table.Column<string>(type: "TEXT", nullable: true),
+                    FromName = table.Column<string>(type: "TEXT", nullable: true),
+                    IsRead = table.Column<bool>(type: "INTEGER", nullable: false),
+                    RelatedId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Messages", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -336,37 +356,37 @@ namespace Inochis.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "6f548def-a5d0-40cb-86f6-ddd747423f53", null, "Süper Yönetici haklarını taşıyan rol", "SuperAdmin", "SUPERADMIN" },
-                    { "b70e45fc-cd36-4786-85f5-77183eb7ecab", null, "Müşteri haklarını taşıyan rol", "Customer", "CUSTOMER" },
-                    { "fe22200b-78b6-4297-abff-be0612ffd1e4", null, "Yönetici haklarını taşıyan rol", "Admin", "ADMIN" }
+                    { "34b39f6e-b56e-4ea9-817c-1398a2ead023", null, "Müşteri haklarını taşıyan rol", "Customer", "CUSTOMER" },
+                    { "c0a82273-f951-491c-a04d-a5d6fe818745", null, "Yönetici haklarını taşıyan rol", "Admin", "ADMIN" },
+                    { "eebc2f2b-3cfd-47ae-a223-c2fbf8e29661", null, "Süper Yönetici haklarını taşıyan rol", "SuperAdmin", "SUPERADMIN" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "Address", "City", "ConcurrencyStamp", "DateOfBirth", "Email", "EmailConfirmed", "FirstName", "Gender", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "a4e1de93-a1f4-475d-9144-255d464d6528", 0, "Ataşehir Residence No:!6/12", "İstanbul", "5c5ff796-cf7b-4e59-b558-62abbf1fc6bf", new DateTime(1990, 5, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), "poyrazkaradogan@gmail.com", true, "Poyraz", "Erkek", "Karadoğan", false, null, "POYRAZKARADOGAN@GMAIL.COM", "POYRAZKARADOGAN", "AQAAAAIAAYagAAAAEKPFGrboloi3TrAZQ1mPBJlCngjZ0E6FYnH/URDCfWHPv3D6kfr5kFvcS5G6+E7Hlw==", "5427643469", false, "56c10bfb-4f16-4b14-873b-e11004d8ffdd", false, "poyrazkaradogan" });
+                values: new object[] { "bf8d6b34-f12a-43a8-9138-780c53f88718", 0, "Ataşehir Residence No:!6/12", "İstanbul", "01c14b77-1b60-4daa-ba4e-11e688c0a960", new DateTime(1990, 5, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), "poyrazkaradogan@gmail.com", true, "Poyraz", "Erkek", "Karadoğan", false, null, "POYRAZKARADOGAN@GMAIL.COM", "POYRAZKARADOGAN", "AQAAAAIAAYagAAAAECy8f7My7YJwN3vd7jXYIaLV5eFHpfoMx8WSD2KzL8Fey8CfzdypuUTlAF4ZFdbpDA==", "5427643469", false, "b0e03da6-bf60-4e00-92b9-5a8a9d57b4e9", false, "poyrazkaradogan" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "Id", "CreatedDate", "Description", "IsActive", "IsDeleted", "ModifiedDate", "Name", "Url" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7681), "", true, false, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7697), "Tüm Ürünlerimiz", "tum-urun" },
-                    { 2, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7701), "", true, false, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7701), "Kolyelerimiz", "kolye" },
-                    { 3, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7702), "", true, false, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7703), "Bileklik-Charmlarımız", "bileklik-charm" },
-                    { 4, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7703), "", true, false, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7704), "Küpelerimiz", "kupe" },
-                    { 5, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7732), "", true, false, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7732), "İndirimli Ürünler", "indirim" }
+                    { 1, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3644), "", true, false, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3655), "Tüm Ürünlerimiz", "tum-urun" },
+                    { 2, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3660), "", true, false, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3660), "Kolyelerimiz", "kolye" },
+                    { 3, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3662), "", true, false, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3662), "Bileklik-Charmlarımız", "bileklik-charm" },
+                    { 4, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3663), "", true, false, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3664), "Küpelerimiz", "kupe" },
+                    { 5, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3665), "", true, false, new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3665), "İndirimli Ürünler", "indirim" }
                 });
 
             migrationBuilder.InsertData(
                 table: "ShoppingCarts",
                 columns: new[] { "Id", "CreatedDate", "UserId" },
-                values: new object[] { 1, new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(3322), "a4e1de93-a1f4-475d-9144-255d464d6528" });
+                values: new object[] { 1, new DateTime(2024, 4, 13, 17, 21, 8, 165, DateTimeKind.Local).AddTicks(9575), "bf8d6b34-f12a-43a8-9138-780c53f88718" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "6f548def-a5d0-40cb-86f6-ddd747423f53", "a4e1de93-a1f4-475d-9144-255d464d6528" });
+                values: new object[] { "eebc2f2b-3cfd-47ae-a223-c2fbf8e29661", "bf8d6b34-f12a-43a8-9138-780c53f88718" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -453,6 +473,9 @@ namespace Inochis.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Messages");
 
             migrationBuilder.DropTable(
                 name: "OrderDetails");

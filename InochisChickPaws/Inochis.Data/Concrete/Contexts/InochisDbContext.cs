@@ -17,34 +17,21 @@ namespace Inochis.Data.Concrete.Contexts
     {
         public InochisDbContext(DbContextOptions options):base(options)
         {
-            
+
         }
         public DbSet<Category> Categories { get; set; }
-
         public DbSet<Product> Products { get; set; }
-
         public DbSet<ProductCategory> ProductCategories { get; set; }
-
-
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
-
-
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
-
-
         public DbSet<Order> Orders { get; set; }
-
         public DbSet<OrderDetail> OrderDetails { get; set; }
-
+        public DbSet<Message> Messages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-
         {
             modelBuilder.SeedData();
-
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryConfig).Assembly);
-
-
             base.OnModelCreating(modelBuilder);
         }
     }

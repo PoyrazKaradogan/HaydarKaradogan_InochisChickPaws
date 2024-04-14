@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Inochis.Data.Migrations
 {
     [DbContext(typeof(InochisDbContext))]
-    [Migration("20240405104458_InochisDb")]
+    [Migration("20240413142108_InochisDb")]
     partial class InochisDb
     {
         /// <inheritdoc />
@@ -61,55 +61,55 @@ namespace Inochis.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7681),
+                            CreatedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3644),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7697),
+                            ModifiedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3655),
                             Name = "Tüm Ürünlerimiz",
                             Url = "tum-urun"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7701),
+                            CreatedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3660),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7701),
+                            ModifiedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3660),
                             Name = "Kolyelerimiz",
                             Url = "kolye"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7702),
+                            CreatedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3662),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7703),
+                            ModifiedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3662),
                             Name = "Bileklik-Charmlarımız",
                             Url = "bileklik-charm"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7703),
+                            CreatedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3663),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7704),
+                            ModifiedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3664),
                             Name = "Küpelerimiz",
                             Url = "kupe"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7732),
+                            CreatedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3665),
                             Description = "",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(7732),
+                            ModifiedDate = new DateTime(2024, 4, 13, 17, 21, 8, 166, DateTimeKind.Local).AddTicks(3665),
                             Name = "İndirimli Ürünler",
                             Url = "indirim"
                         });
@@ -146,21 +146,21 @@ namespace Inochis.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "6f548def-a5d0-40cb-86f6-ddd747423f53",
+                            Id = "eebc2f2b-3cfd-47ae-a223-c2fbf8e29661",
                             Description = "Süper Yönetici haklarını taşıyan rol",
                             Name = "SuperAdmin",
                             NormalizedName = "SUPERADMIN"
                         },
                         new
                         {
-                            Id = "fe22200b-78b6-4297-abff-be0612ffd1e4",
+                            Id = "c0a82273-f951-491c-a04d-a5d6fe818745",
                             Description = "Yönetici haklarını taşıyan rol",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "b70e45fc-cd36-4786-85f5-77183eb7ecab",
+                            Id = "34b39f6e-b56e-4ea9-817c-1398a2ead023",
                             Description = "Müşteri haklarını taşıyan rol",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER"
@@ -251,11 +251,11 @@ namespace Inochis.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "a4e1de93-a1f4-475d-9144-255d464d6528",
+                            Id = "bf8d6b34-f12a-43a8-9138-780c53f88718",
                             AccessFailedCount = 0,
                             Address = "Ataşehir Residence No:!6/12",
                             City = "İstanbul",
-                            ConcurrencyStamp = "5c5ff796-cf7b-4e59-b558-62abbf1fc6bf",
+                            ConcurrencyStamp = "01c14b77-1b60-4daa-ba4e-11e688c0a960",
                             DateOfBirth = new DateTime(1990, 5, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "poyrazkaradogan@gmail.com",
                             EmailConfirmed = true,
@@ -265,13 +265,48 @@ namespace Inochis.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "POYRAZKARADOGAN@GMAIL.COM",
                             NormalizedUserName = "POYRAZKARADOGAN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKPFGrboloi3TrAZQ1mPBJlCngjZ0E6FYnH/URDCfWHPv3D6kfr5kFvcS5G6+E7Hlw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECy8f7My7YJwN3vd7jXYIaLV5eFHpfoMx8WSD2KzL8Fey8CfzdypuUTlAF4ZFdbpDA==",
                             PhoneNumber = "5427643469",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "56c10bfb-4f16-4b14-873b-e11004d8ffdd",
+                            SecurityStamp = "b0e03da6-bf60-4e00-92b9-5a8a9d57b4e9",
                             TwoFactorEnabled = false,
                             UserName = "poyrazkaradogan"
                         });
+                });
+
+            modelBuilder.Entity("Inochis.Entity.Concrete.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FromId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FromName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("RelatedId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("SendingDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ToId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ToName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("Inochis.Entity.Concrete.Order", b =>
@@ -444,8 +479,8 @@ namespace Inochis.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 5, 13, 44, 58, 66, DateTimeKind.Local).AddTicks(3322),
-                            UserId = "a4e1de93-a1f4-475d-9144-255d464d6528"
+                            CreatedDate = new DateTime(2024, 4, 13, 17, 21, 8, 165, DateTimeKind.Local).AddTicks(9575),
+                            UserId = "bf8d6b34-f12a-43a8-9138-780c53f88718"
                         });
                 });
 
@@ -561,8 +596,8 @@ namespace Inochis.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "a4e1de93-a1f4-475d-9144-255d464d6528",
-                            RoleId = "6f548def-a5d0-40cb-86f6-ddd747423f53"
+                            UserId = "bf8d6b34-f12a-43a8-9138-780c53f88718",
+                            RoleId = "eebc2f2b-3cfd-47ae-a223-c2fbf8e29661"
                         });
                 });
 

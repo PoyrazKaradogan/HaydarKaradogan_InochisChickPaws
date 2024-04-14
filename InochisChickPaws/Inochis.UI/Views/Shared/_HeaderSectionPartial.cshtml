@@ -2,28 +2,34 @@
 <header class="header">
     <div class="container-fluid ">
         <div class="row ">
-            <div class="col-xl-3 col-lg-2 ">
-                <div class="header__logo">
-                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="/ui/img/logos.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-xl-5 col-lg-7 mt-5">
+            <div class=" col-lg-5 mt-5">
                 <nav class="header__menu">
                     <ul>
                         <li class="active">
                             <a asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
                         </li>
-                <li>
-                            <a a asp-area="" asp-controller="Home" asp-action="Hakkimizda">Hakkımızda</a>
-                </li>
-                        
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Contact">İletişim</a>
+                            <a a asp-area="" asp-controller="Home" asp-action="Hakkimizda">Hakkımızda</a>
+                        </li>
+                        <li>
+                            <a href="#">Kategoriler</a>
+                            <ul class="dropdown">
+                                <li><a href="1">Tüm Ürünlerimiz</a></li>
+                                <li><a href="/Product/Index/2">Kolyelerimiz</a></li>
+                                <li><a href="/Product/Index/3">Bileklik-Charmlarımız</a></li>
+                                <li><a href="/Product/Index/4">Küpelerimiz</a></li>
+                                <li><a href="/Product/Index/5">İndirimli Ürünler</a></li>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-3 mt-3">
+            <div class=" col-lg-3 ">
+                <div class="header__logo">
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="/ui/img/logos.png" alt=""></a>
+                </div>
+            </div>
+        
+            <div class="col-lg-4 mt-3">
                 <div class="header__right">
                     <div class="header__right__auth">
                         @if (!User.Identity.IsAuthenticated)
@@ -51,18 +57,13 @@
 
                     </div>
                     <ul class="header__right__widget">
-                     
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <li>
-                                <a href="#">
-                                    <span class="icon_heart_alt"></span>
-                                    <div class="tip">2</div>
-                                </a>
-                            </li>
-                            @await Component.InvokeAsync("ShoppingCartNotification", User.Identity.Name ?? null);
+                            @await Component.InvokeAsync("MessageNotification")
+                            @await Component.InvokeAsync("ShoppingCartNotification", User.Identity.Name ?? null)
+                            ;
                         }
-                        
+
                     </ul>
                 </div>
             </div>

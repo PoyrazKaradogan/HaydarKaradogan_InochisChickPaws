@@ -22,6 +22,18 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Areas/Admin/Views/Message/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Areas/Admin/Views/Message/NewMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxOZXdNZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Areas/Admin/Views/Message/ReadMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxSZWFkTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Areas/Admin/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -152,6 +164,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Views/Message/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Views/Message/NewMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxOZXdNZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Views/Message/ReadMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxSZWFkTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Views/Order/Checkout.cshtml]

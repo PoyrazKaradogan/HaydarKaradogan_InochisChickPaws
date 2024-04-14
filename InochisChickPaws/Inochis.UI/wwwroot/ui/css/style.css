@@ -1040,7 +1040,7 @@ ol {
 }
 
 .categories__item {
-	height: 314px;
+	height: 400px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1048,8 +1048,20 @@ ol {
 	-ms-flex-align: center;
 	align-items: center;
 	padding-left: 30px;
-	margin-bottom: 10px;
-	margin-right: 10px;
+	
+
+}
+
+.categories__item1 {
+	height: 400px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-left: 30px;
+
 }
 
 .categories__item.categories__large__item {
@@ -1059,6 +1071,8 @@ ol {
 
 .categories__item.categories__large__item .categories__text {
 	max-width: 480px;
+	margin-left:0;
+
 }
 
 .categories__item.categories__large__item .categories__text p {
@@ -1072,15 +1086,42 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 	font-size: 40px;	
 	font-weight:bold;
 	background-color:#fff;
+
+	text-align:center;
+}
+
+.categories__text1 h1 {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: #fff;
+	margin-bottom: 5px;
+	font-size: 40px;
+	font-weight: bold;
+	background-color: #fff;
+	text-align: center;
 }
 
 .categories__text h4 {
-	color: #111111;
+	color:#111111;
+	font-weight: 700;
+	
+		
+	
+}
+}
+
+.categories__text1 h4 {
+	color: #fff;
 	font-weight: 700;
 }
 
 .categories__text p {
 	margin-bottom: 10px;
+	width:220px;
+	
+}
+.categories__text1 p {
+	margin-bottom: 10px;
+	width: 220px;
 }
 
 .categories__text a {
@@ -1091,6 +1132,8 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 	position: relative;
 	padding: 0 0 3px;
 	display: inline-block;
+	
+
 }
 
 .categories__text a:after {
@@ -1164,9 +1207,10 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 }
 
 .product__item__pic {
-	height: 275px;
+	height: 300px;
 	position: relative;
 	overflow: hidden;
+	width:400px
 }
 
 .product__item__pic .label {
@@ -1182,7 +1226,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 }
 
 .product__item__pic .label.new {
-	background: #36a300;
+	background: #111111;
 }
 
 .product__item__pic .label.stockout {

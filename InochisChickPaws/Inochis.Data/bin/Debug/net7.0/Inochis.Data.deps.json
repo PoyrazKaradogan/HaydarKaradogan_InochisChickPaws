@@ -11,9 +11,7 @@
           "Inochis.Entity": "1.0.0",
           "Inochis.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.15",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.15",
-          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.15",
-          "Microsoft.EntityFrameworkCore.Tools": "7.0.15"
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.15"
         },
         "runtime": {
           "Inochis.Data.dll": {}
@@ -136,11 +134,6 @@
             "assemblyVersion": "7.0.15.0",
             "fileVersion": "7.0.1523.57109"
           }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Tools/7.0.15": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "7.0.15"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
@@ -512,13 +505,6 @@
       "sha512": "sha512-MPdCayDtYdsfFbP8BK+RZz+KlOKTQe66NqRWnHAIe4FLVRKSLFZhcbDQr5mfvctQv0Dzl05NvlI2QXlkH7Pk3Q==",
       "path": "microsoft.entityframeworkcore.sqlite.core/7.0.15",
       "hashPath": "microsoft.entityframeworkcore.sqlite.core.7.0.15.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Tools/7.0.15": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7/gt7XfvQ1Sb7+kk6HkU8s6MlCkXRoEHKcJ0fXjGhLgDPq6e1G9/WJZvCxuLJzOFjxn4MIJMiEbdN8KVrIQ9CA==",
-      "path": "microsoft.entityframeworkcore.tools/7.0.15",
-      "hashPath": "microsoft.entityframeworkcore.tools.7.0.15.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
       "type": "package",
