@@ -8217,6 +8217,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\22e3e1d3-c48c-4769-8eb9-b1050064f430.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\22e3e1d3-c48c-4769-8eb9-b1050064f430.jpeg"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\969237be-3594-4744-8234-c47100dd1f44.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\969237be-3594-4744-8234-c47100dd1f44.jpeg"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\ac5a3421-c50b-4702-a258-4fa980511b9d.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\ac5a3421-c50b-4702-a258-4fa980511b9d.jpeg"
+    },
+    {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\b3b1df50-d4ae-4240-88ec-95c3ab9661f5.jpeg",
       "PackagePath": "staticwebassets\\images\\products\\b3b1df50-d4ae-4240-88ec-95c3ab9661f5.jpeg"
     },
@@ -8227,6 +8239,10 @@
     {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\d705d8af-26ea-4515-ab04-f0e438dc39b1.jpg",
       "PackagePath": "staticwebassets\\images\\products\\d705d8af-26ea-4515-ab04-f0e438dc39b1.jpg"
+    },
+    {
+      "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\images\\products\\efaf778b-2440-452c-86d9-a1c38b2ebe69.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\efaf778b-2440-452c-86d9-a1c38b2ebe69.jpeg"
     },
     {
       "Id": "C:\\Belgeler\\HaydarKaradogan_InochisChickPaws\\InochisChickPaws\\Inochis.UI\\wwwroot\\ui\\css\\bootstrap.min.css",

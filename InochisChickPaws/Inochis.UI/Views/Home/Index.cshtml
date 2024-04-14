@@ -26,8 +26,20 @@
                                class="label new ml-3 mt-1">Detay</a>
                             <ul class="product__hover">
                                 <li><a href="/images/products/@p.ImageUrl" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li>
+                                        <form asp-area=""
+                                              asp-controller="ShoppingCart"
+                                              asp-action="AddToCart">
+                                            <input type="hidden" name="productId" value="@p.Id" />
+                                            <input type="hidden" name="quantity" value="1" />
 
-                                <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                                            <button type="submit" style="background-color:transparent; border:none"><a><span class="icon_bag_alt"></span></a></button>
+                                        </form>
+                                    </li>
+                                }
+                        
                             </ul>
                         </div>
                         <div class="product__item__text">

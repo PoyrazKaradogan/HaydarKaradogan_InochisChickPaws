@@ -3,7 +3,7 @@
 <section class="product-details spad">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="product__details__pic">
                     <div class="product__details__pic__left product__thumb nice-scroll">
                         <a class="pt active" href="#product-@Model.Id-1">
@@ -27,32 +27,41 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="product__details__text">
-                    <h3>@Model.Name <span>Brand: Buraya marka gelecek</span></h3>
+                    <h3>@Model.Name <span>InochisChickPaws</span></h3>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
-                        <span>( 138 reviews )</span>
+                      
                     </div>
                     @{
                         var price = Model.Price;
                         var discountPrice = Convert.ToDouble(price) - (Convert.ToDouble(price) * 0.1);
+                        <h5>@Model.Properties</h5>
                     }
                     <div class="product__details__price">@discountPrice TL <span>@price TL</span></div>
-                    <p>@Model.Properties</p>
+                    
                     <div class="product__details__button">
-                        <div class="quantity">
-                            <span>Adet:</span>
-                            <div class="pro-qty">
-                                <input type="text" value="1">
-                            </div>
-                        </div>
-                        <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Sepete ekle</a>
                      
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                           
+                                <form asp-area=""
+                                      asp-controller="ShoppingCart"
+                                      asp-action="AddToCart">
+                                    <input type="hidden" name="productId" value="@Model.Id" />
+                                    <input type="hidden" name="quantity" value="1" />
+
+                                <button type="submit" class="site-btn">Sepete-Ekle</button>
+                                </form>
+                           
+                        }
+                        
+
                     </div>
         
     
