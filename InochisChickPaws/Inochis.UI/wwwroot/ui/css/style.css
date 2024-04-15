@@ -433,7 +433,11 @@ ol {
 }
 
 .canvas__open {
+	background-color:black;
 	display: none;
+	width:30px;
+	margin-top:150px
+	
 }
 
 

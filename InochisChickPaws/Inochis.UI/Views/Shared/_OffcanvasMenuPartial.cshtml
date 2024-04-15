@@ -3,8 +3,9 @@
 <div class="offcanvas-menu-wrapper">
     <div class="offcanvas__close">+</div>
     <ul class="offcanvas__widget">
-        
-        @await Component.InvokeAsync("ShoppingCartNotification")
+
+        @await Component.InvokeAsync("MessageNotification")
+        @await Component.InvokeAsync("ShoppingCartNotification", User.Identity.Name ?? null)
     </ul>
     <div class="offcanvas__logo">
         <a href="./index.html"><img src="/ui/img/logos.png" alt=""></a>
