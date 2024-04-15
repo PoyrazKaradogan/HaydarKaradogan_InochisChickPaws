@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Inochis.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6360fad510a525f2833764a9b983994f3cff1831")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+154c9ce56c2e7fd13f7a15e24e3cdce88b6dd341")]
 [assembly: System.Reflection.AssemblyProductAttribute("Inochis.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inochis.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
