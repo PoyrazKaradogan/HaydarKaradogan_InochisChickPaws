@@ -89,3 +89,6 @@ C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\obj\Deb
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\bin\Debug\net7.0\SixLabors.Fonts.dll
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\bin\Debug\net7.0\SixLabors.ImageSharp.dll
 C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\bin\Debug\net7.0\SixLabors.ImageSharp.Drawing.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll

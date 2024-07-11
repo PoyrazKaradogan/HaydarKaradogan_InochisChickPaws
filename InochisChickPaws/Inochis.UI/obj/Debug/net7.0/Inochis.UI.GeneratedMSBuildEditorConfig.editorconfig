@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Belgeler\HaydarKaradogan_InochisChickPaws\InochisChickPaws\Inochis.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/wwwroot/Image/ImageResize.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxJbWFnZVxJbWFnZVJlc2l6ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Belgeler/HaydarKaradogan_InochisChickPaws/InochisChickPaws/Inochis.UI/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
