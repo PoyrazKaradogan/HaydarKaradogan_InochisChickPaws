@@ -1,8 +1,8 @@
 ﻿@model List<ProductViewModel>
 @await Component.InvokeAsync("Categories")
 <!-- Banner Section Begin -->
-<div class="banner set-bg col-sm-12 container-fluid" data-setbg="/ui/img/banner/banner-1.jpg">
-  
+<div class="banner set-bg col-sm-12 container-fluid" @* data-setbg="/ui/img/banner/banner-1.jpg" *@>
+    <img src="/ui/img/banner/banner-1.jpg" />
 </div>
 <!-- Banner Section End -->
 <!-- Product Section Begin -->
@@ -21,7 +21,7 @@
             {
                 <div class="col-lg-3 col-md-4 col-sm-6 mix">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="/images/products/@p.ImageUrl">
+                        <div class="product__item__pic set-bg" data-setbg="/images/products/@p.ImageUrls">
                             
                             <a asp-area=""
                                asp-controller="Product"
@@ -29,7 +29,7 @@
                                asp-route-id="@p.Id"
                                class="label new ml-3 mt-1">Detay</a>
                             <ul class="product__hover">
-                                <li><a href="/images/products/@p.ImageUrl" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                <li><a href="/images/products/@p.ImageUrls" class="image-popup"><span class="arrow_expand"></span></a></li>
                                 
                                 @if (User.Identity.IsAuthenticated)
                                 {

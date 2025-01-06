@@ -1,28 +1,24 @@
-﻿  @model ProductViewModel
-  <!-- Product Details Section Begin -->
+﻿@model ProductViewModel
+<!-- Product Details Section Begin -->
 <section class="product-details spad">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
                 <div class="product__details__pic">
                     <div class="product__details__pic__left product__thumb nice-scroll">
-                        <a class="pt active" href="#product-@Model.Id-1">
-                            <img src="/images/products/@Model.ImageUrl" alt="">
-                        </a>
-                        <a class="pt" href="#product-@Model.Id-2">
-                            <img src="/images/products/@Model.ImageUrl" alt="">
-                        </a>
-                        <a class="pt" href="#product-@Model.Id-3">
-                            <img src="/images/products/@Model.ImageUrl" alt="">
-                        </a>
-                     
+                        @for (int i = 0; i < Model.ImageUrls.Count; i++)
+                        {
+                            <a class="pt @(i == 0 ? "active" : "")" href="#product-@(i + 1)">
+                                <img src="@Model.ImageUrls[i]" alt="">
+                            </a>
+                        }
                     </div>
                     <div class="product__details__slider__content">
                         <div class="product__details__pic__slider owl-carousel">
-                           
-                            <img data-hash="product-@Model.Id-2" class="product__big__img" src="/images/products/@Model.ImageUrl" alt="">
-                            <img data-hash="product-@Model.Id-3" class="product__big__img" src="/images/products/@Model.ImageUrl" alt="">
-                            <img data-hash="product-@Model.Id-4" class="product__big__img" src="/images/products/@Model.ImageUrl" alt="">
+                            @for (int i = 0; i < Model.ImageUrls.Count; i++)
+                            {
+                                <img data-hash="product-@(i + 1)" class="product__big__img" src="@Model.ImageUrls[i]" alt="">
+                            }
                         </div>
                     </div>
                 </div>
@@ -36,39 +32,24 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
-                      
                     </div>
                     @{
                         var price = Model.Price;
                         var discountPrice = Convert.ToDouble(price) - (Convert.ToDouble(price) * 0.1);
-                      
                     }
                     <div class="product__details__price">@discountPrice TL <span>@price TL</span></div>
-                    
                     <div class="product__details__button">
-                     
                         @if (User.Identity.IsAuthenticated)
                         {
-                           
-                                <form asp-area=""
-                                      asp-controller="ShoppingCart"
-                                      asp-action="AddToCart">
-                                    <input type="hidden" name="productId" value="@Model.Id" />
-                                    <input type="hidden" name="quantity" value="1" />
-
+                            <form asp-area=""
+                                  asp-controller="ShoppingCart"
+                                  asp-action="AddToCart">
+                                <input type="hidden" name="productId" value="@Model.Id" />
+                                <input type="hidden" name="quantity" value="1" />
                                 <button type="submit" class="site-btn">Sepete-Ekle</button>
-                                </form>
-                           
+                            </form>
                         }
-                        
-
                     </div>
-        
-    
-       
-    
-
-         
                 </div>
             </div>
         </div>

@@ -64,7 +64,7 @@ namespace Inochis.Business.Concrete
             {
                 Id = shoppingCartItemId,
                 ProductId = shoppingCartItem.ProductId,
-                ProductImageUrl = shoppingCartItem.Product.ImageUrl,
+                ProductImageUrl = shoppingCartItem.Product.ImageUrls,
                 ProductName = shoppingCartItem.Product.Name,
                 ProductPrice = shoppingCartItem.Product.Price,
                 Quantity = shoppingCartItem.Quantity

@@ -32,7 +32,7 @@ namespace Inochis.Data.Concrete.Configs
 
 
 
-            builder.Property(p=>p.ImageUrl).IsRequired().HasMaxLength(500);
+            builder.Property(p=>p.ImageUrls).IsRequired().HasMaxLength(500);
 
 
             builder.Property(p => p.Price).IsRequired().HasColumnType("real"); 

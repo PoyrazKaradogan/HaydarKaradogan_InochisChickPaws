@@ -34,10 +34,11 @@ namespace Inochis.Business.Mappings
 
             CreateMap<ShoppingCartItemViewModel, ShoppingCartItem>()
                 .ForMember(e => e.Product, options =>
-                    options.MapFrom(v => new Product { Price = v.ProductPrice, Name = v.ProductName, ImageUrl = v.ProductImageUrl })
+                    options.MapFrom(v => new Product { Price = v.ProductPrice, Name = v.ProductName, ImageUrls = v.ProductImageUrl })
                 ).ReverseMap();
             CreateMap<ShoppingCart, ShoppingCartViewModel>().ReverseMap();
             CreateMap<Message, MessageViewModel>().ReverseMap();
         }
     }
 }
+

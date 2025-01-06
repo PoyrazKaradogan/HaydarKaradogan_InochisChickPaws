@@ -107,7 +107,7 @@ namespace Inochis.Business.Concrete
                     Quantity = od.Quantity,
                     Product=new ProductViewModel
                     {
-                        ImageUrl=od.Product.ImageUrl, Name=od.Product.Name
+                        ImageUrls=od.Product.ImageUrls, Name=od.Product.Name
                     }
                 }).ToList()
             }).ToList();

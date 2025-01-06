@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Inochis.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25e0bda88f6f09d18b0e9ea72b5521c4edac1063")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f9b7991c664dbe31e0eb7f3ceebd607cbcb4603")]
 [assembly: System.Reflection.AssemblyProductAttribute("Inochis.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inochis.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

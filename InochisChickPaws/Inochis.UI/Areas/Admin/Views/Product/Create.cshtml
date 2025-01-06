@@ -69,12 +69,14 @@
                                     <div class="col-sm-3">
                                         <div class="form-group">
                                             <label>Ürün Resmi</label>
-                                            <input id="image" name="image" type="file" class="d-none" accept="image/png, image/jpg, image/jpeg" />
+                                            <input id="image" name="image" type="file" class="d-none" multiple accept="image/*" />
                                             <div class="mt-2">
                                                 <label class="btn btn-outline-danger" for="image">Ürün Resmi Yükle</label>
                                             </div>
                                             <span class="text-danger">@ViewBag.ImageErrorMessage</span>
-                                            <img id="image-viewer" class="img-fluid" style="height:200px;" />
+                                            <img id="image-viewer1" src="" class="img-fluid" style="height:200px;" />
+                                            <img id="image-viewer2" src="" class="img-fluid" style="height:200px;" />
+                                            <img id="image-viewer3" src="" class="img-fluid" style="height:200px;" />
                                         </div>
                                     </div>
                                     
@@ -122,14 +124,25 @@
 @section Scripts{
     @await Html.PartialAsync("_SummerNotePartial")
     <script>
-        // document.getElementById("image").addEventListener("change", function () {
-
-        // });
+        let selectedFiles = []; // Seçilen dosyaları saklamak için dizi
 
         $("#image").on("change", function (e) {
-            const selectedFiles = e.target.files;
-            
-            $("#image-viewer").attr("src", window.URL.createObjectURL(selectedFiles[0]));
+            const newFiles = e.target.files; // Yeni dosyaları al
+
+            // Yeni dosyaları mevcut dosya dizisine ekle
+            for (let i = 0; i < newFiles.length; i++) {
+                selectedFiles.push(newFiles[i]);
+            }
+
+            // Her bir resmi görüntülemek için döngü (en fazla 3 resim)
+            for (let i = 0; i < selectedFiles.length && i < 3; i++) {
+                const imgElement = $(`#image-viewer${i + 1}`);
+                imgElement.attr("src", window.URL.createObjectURL(selectedFiles[i]));
+                imgElement.css("display", "block"); // Resmi göster
+            }
+            e.target.files= selectedFiles
         });
     </script>
+
+
 }
